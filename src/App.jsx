@@ -3,15 +3,20 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { NavBar } from "./component/NavBar";
-import Routing from "./component/Routing";
-
+import { Skill } from "./component/Skill";
+import { Home } from "./component/Home"
+import { About } from "./component/About";
+import { Contact } from "./component/Contact";
+import {Projects} from "./component/Projects"
 function App() {
-
-
   return (
     <>
       <NavBar />
-      <Routing />
+      <Home />
+      <About />
+      <Skill />
+      <Projects />
+      <Contact />
     </>
   );
 }

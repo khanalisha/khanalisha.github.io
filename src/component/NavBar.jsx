@@ -1,27 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 export const NavBar = () => {
   return (
-    <div id="nav-menu">
-      <Link className="nav-link home" to="/">
+    <NAVBAR id="nav-menu">
+      <a className="nav-link home" href="#home">
         Home
-      </Link>
-      <Link className="nav-link about" to="/about">
+      </a>
+      <a className="nav-link about" href="#about">
         About
-      </Link>
-      <Link className="nav-link skills" to="/skill">
+      </a>
+      <a className="nav-link skills" href="#skills">
         Skill
-      </Link>
-      <Link className="nav-link projects" to="/project">
+      </a>
+      <a className="nav-link projects" href="#projects">
         Project
-      </Link>
-      <Link className="nav-link contact" to="/contact">
+      </a>
+      <a className="nav-link contact" href="#contact">
         Contact
-      </Link>
-      <Link className="nav-link resume" to="/resume">
+      </a>
+      <a
+        className="nav-link resume"
+        href="/public/Resume.pdf"
+        id="resume-link-1"
+        download
+      >
         Resume
-      </Link>
-    </div>
+      </a>
+    </NAVBAR>
   );
 };
+
+const NAVBAR = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  box-shadow: 0 2px 8px 0 rgba(0 0 0/0.5);
+  a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.5 rem;
+    transition: color 0.2s ease-in;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+`;
