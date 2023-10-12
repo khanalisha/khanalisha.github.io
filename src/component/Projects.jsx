@@ -9,7 +9,7 @@ export const Projects = () => {
         <div className="project-card">
           <img src="" alt="" />
           <h4 className="project-title">SwiftPay (online finance app)</h4>
-          <p>
+          <p className="project-description">
             Swiftpay is a dynamic and user-friendly finance website that
             revolutionizes the way you manage your financial transactions. With
             Swiftpay, you can seamlessly handle subscriptions, send and receive
@@ -42,7 +42,7 @@ export const Projects = () => {
         <div className="project-card">
           <img src="" alt="" />
           <h4 className="project-title">SwiftPay (online finance app)</h4>
-          <p>
+          <p className="project-description">
             Swiftpay is a dynamic and user-friendly finance website that
             revolutionizes the way you manage your financial transactions. With
             Swiftpay, you can seamlessly handle subscriptions, send and receive
@@ -75,7 +75,7 @@ export const Projects = () => {
         <div className="project-card">
           <img src="" alt="" />
           <h4 className="project-title">SwiftPay (online finance app)</h4>
-          <p>
+          <p className="project-description">
             Swiftpay is a dynamic and user-friendly finance website that
             revolutionizes the way you manage your financial transactions. With
             Swiftpay, you can seamlessly handle subscriptions, send and receive
@@ -108,7 +108,7 @@ export const Projects = () => {
         <div className="project-card">
           <img src="" alt="" />
           <h4 className="project-title">SwiftPay (online finance app)</h4>
-          <p>
+          <p className="project-description">
             Swiftpay is a dynamic and user-friendly finance website that
             revolutionizes the way you manage your financial transactions. With
             Swiftpay, you can seamlessly handle subscriptions, send and receive

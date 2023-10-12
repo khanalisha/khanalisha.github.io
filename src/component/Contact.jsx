@@ -20,6 +20,9 @@ export const Contact = () => {
         Linkedin Profile
       </a>
       <button id="contact-phone">6201984754</button>
+      <a href="#" id="contact-email" target="_blank">
+        8282alishakhan@gmail.com
+      </a>
     </SECTION>
   );
 };
