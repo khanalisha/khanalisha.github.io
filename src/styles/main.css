@@ -2,8 +2,11 @@
 
 :root {
   --text: #070403;
+  --gray: rgb(33 33 33);
   --background: #ffffff;
   --primary: #e17256;
+
+  /* --primary: rgba(237, 169, 180, 1); */
   --secondary: #e5cac3;
   --accent: #985443;
 }
@@ -15,7 +18,51 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background-color: var(--gray);
+}
+/* for CTA/resume button */
+.resume {
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  background: var(--primary);
+  border-radius: 50px;
+  font-size: 1.15rem;
+  transition: all 0.2s ease-in;
+  color: var(--background) !important;
+}
+.resume:hover {
+  opacity: 0.9;
+  color: var(--background);
+}
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h2 {
+  color: var(--primary);
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+p {
+  color: var(--background);
+  opacity: 0.9;
+  max-width: 500px;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }

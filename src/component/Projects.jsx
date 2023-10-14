@@ -17,7 +17,6 @@ export const Projects = () => {
             right on your user interface.
           </p>
           <div class="project-tech-stack">
-            {" "}
             <button>React</button>
             <button>Redux</button>
             <button>CSS</button>
