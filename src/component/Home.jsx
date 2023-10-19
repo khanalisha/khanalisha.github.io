@@ -16,11 +16,21 @@ export const Home = () => {
           <span>Web Developer</span>
           <h1 id="user-detail-name">Alisha khan</h1>
           <p id="user-detail-intro">
-            There wasn't a bird in the sky, but that was not what caught her
-            attention. It was the clouds. The deep green that isn't the color of
-            clouds, but came with these. She knew what was coming and she hoped
-            she was prepared.
+            Enthusiastic Full Stack Web Developer adeptly wielding a
+            comprehensive mastery of both Frontend and Backend technologies
+            within the dynamic MERN stack. Eager to embark on a career journey
+            with an organization that not only fosters skill enhancement and
+            knowledge enrichment but also aligns with its ambitious goals,
+            fostering mutual growth and success
           </p>
+          <a
+            className="nav-link resume"
+            href="/public/Resume.pdf"
+            id="resume-link-2"
+            download
+          >
+            Stay Connected
+          </a>
           <a
             className="nav-link resume"
             href="/public/Resume.pdf"

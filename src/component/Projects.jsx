@@ -115,7 +115,6 @@ export const Projects = () => {
             right on your user interface.
           </p>
           <div class="project-tech-stack">
-            {" "}
             <button>React</button>
             <button>Redux</button>
             <button>CSS</button>
@@ -142,5 +141,5 @@ export const Projects = () => {
 };
 const SECTION = styled.section`
   min-height: 80vh;
-  background-color: blue;
+  background-color: var(--gray);
 `;

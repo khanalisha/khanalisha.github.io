@@ -19,6 +19,10 @@ export const NavBar = () => {
         <a className="nav-link projects" href="#projects">
           Project
         </a>
+
+        <a className="nav-link statistics" href="#statistics">
+          Statistics
+        </a>
         <a className="nav-link contact" href="#contact">
           Contact
         </a>
@@ -43,6 +47,7 @@ const NAVBAR = styled.nav`
   z-index: 10000;
   padding: 1.5rem 2.5rem;
   /* background-color: var(--background); */
+  border: 2px solid blue;
   background-color: transparent;
   display: flex;
   align-items: center;

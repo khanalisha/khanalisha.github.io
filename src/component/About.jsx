@@ -13,12 +13,9 @@ export const About = () => {
           <div className="about-content">
             <h2>Who Am I?</h2>
             <p>
-              My name's Alisha. I'm a Web developer based in Southampton, UK.
-              During the day I work as a lead developer at a local agency and in
-              the evening I work on freelance projects and utilize the time to
-              built my own products. I spent my leisure hours writing articles
-              and poetry. Right now I'm also trying a hand at machine learning
-              and AI. I love to learn and explore new arenas.
+              Greetings! Alisha khan, a skilled Full stack developer with a
+              passion for creating efficient and user-friendly web application.
+              With the expertise in the both Frontend and Backend technologies.
             </p>
           </div>
           <div className="about-image-container">
