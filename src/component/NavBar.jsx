@@ -47,7 +47,7 @@ const NAVBAR = styled.nav`
   z-index: 10000;
   padding: 1.5rem 2.5rem;
   /* background-color: var(--background); */
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   background-color: transparent;
   display: flex;
   align-items: center;

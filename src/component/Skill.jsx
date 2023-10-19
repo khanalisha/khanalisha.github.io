@@ -108,7 +108,7 @@ export const Skill = () => {
 const SECTION = styled.section`
   min-height: 80vh;
   background-color: var(--gray);
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   gap: 10rem;
   .Description-skill {
@@ -124,7 +124,7 @@ const SECTION = styled.section`
   }
 
   .Toggle {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: 30%;
     height: 40px;
     margin-left: 7rem;
@@ -150,7 +150,7 @@ const SECTION = styled.section`
     font-size: 1.15rem;
   }
   .all-skill {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-right: 5rem;
@@ -159,7 +159,7 @@ const SECTION = styled.section`
     width: 48%;
 
     .skills-card {
-      border: 2px solid yellow;
+      /* border: 2px solid yellow; */
       min-width: 10vh;
       height: 150px;
       margin-top: 1rem;
