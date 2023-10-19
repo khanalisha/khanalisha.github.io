@@ -75,7 +75,7 @@ Error generating stack: `+i.message+`
   z-index: 10000;
   padding: 1.5rem 2.5rem;
   /* background-color: var(--background); */
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -126,7 +126,7 @@ Error generating stack: `+i.message+`
 `,Ym=()=>{const[e,t]=b.useState(!0);return p.jsxs(Xm,{id:"skills",children:[p.jsxs("div",{className:"Description-skill",children:[p.jsx("h2",{children:"What Are My Proficiencies in Programming?"}),p.jsx("p",{children:"I craft straightforward, user-friendly, and adaptive interfaces that facilitate users in achieving their objectives with utmost efficiency and expeditiousness, employing the latest cutting-edge technologies."}),p.jsxs("div",{className:"Toggle",children:[p.jsx("button",{className:"Toggle-skill",onClick:()=>t(!0),children:"Skill"}),p.jsx("button",{className:"Toggle-tools",onClick:()=>t(!1),children:"Tools"})]})]}),e?p.jsxs("div",{className:"all-skill",children:[p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/HTML.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"HTML"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/CSS.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"CSS"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/JS.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"JavaScript"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/React.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"React"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/logos_redux.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"Redux"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/Node.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"Node js"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/Mongo.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"MongoDB"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"/public/Typescript.svg",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name",children:"TypeScript"})]})]}):p.jsxs("div",{className:"all-skill",children:[p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]}),p.jsxs("div",{className:"skills-card",children:[p.jsx("img",{src:"",alt:"",className:"skills-card-img"}),p.jsx("h4",{className:"skills-card-name"})]})]})]})},Xm=be.section`
   min-height: 80vh;
   background-color: var(--gray);
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   gap: 10rem;
   .Description-skill {
@@ -142,7 +142,7 @@ Error generating stack: `+i.message+`
   }
 
   .Toggle {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: 30%;
     height: 40px;
     margin-left: 7rem;
@@ -168,7 +168,7 @@ Error generating stack: `+i.message+`
     font-size: 1.15rem;
   }
   .all-skill {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-right: 5rem;
@@ -177,7 +177,7 @@ Error generating stack: `+i.message+`
     width: 48%;
 
     .skills-card {
-      border: 2px solid yellow;
+      /* border: 2px solid yellow; */
       min-width: 10vh;
       height: 150px;
       margin-top: 1rem;
