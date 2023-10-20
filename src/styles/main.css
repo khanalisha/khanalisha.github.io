@@ -5,7 +5,7 @@
   --gray: rgb(33 33 33);
   --background: #ffffff;
   --primary: #e17256;
-
+  --header: hsl(0, 0%, 12%);
   /* --primary: rgba(237, 169, 180, 1); */
   --secondary: #e5cac3;
   --accent: #985443;

@@ -8,7 +8,8 @@ import { Home } from "./component/Home";
 import { About } from "./component/About";
 import { Contact } from "./component/Contact";
 import { Projects } from "./component/Projects";
-import { Statistics } from "./component/common/Statistics";
+import Statistics from "./component/common/Statistics";
+
 function App() {
   return (
     <>

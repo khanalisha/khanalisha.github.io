@@ -154,7 +154,7 @@ const SECTION = styled.section`
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-right: 5rem;
-    margin-top: 2rem;
+    margin-top: 7rem;
     margin-bottom: 12rem;
     width: 48%;
 

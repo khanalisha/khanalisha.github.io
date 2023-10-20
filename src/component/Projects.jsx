@@ -4,8 +4,10 @@ import styled from "styled-components";
 export const Projects = () => {
   return (
     <SECTION id="projects">
-      <h2>Some of my work</h2>
-      <div>
+      <div className="header">
+        <h2>Some of my work</h2>
+      </div>
+      <div className="main-project-card">
         <div className="project-card">
           <img src="" alt="" />
           <h4 className="project-title">SwiftPay (online finance app)</h4>
@@ -16,11 +18,6 @@ export const Projects = () => {
             money from your contacts, and witness real-time transaction updates
             right on your user interface.
           </p>
-          <div class="project-tech-stack">
-            <button>React</button>
-            <button>Redux</button>
-            <button>CSS</button>
-          </div>
 
           <a
             href="https://github.com/AyushmaanRajput/warlike-current-5989"
@@ -48,12 +45,6 @@ export const Projects = () => {
             money from your contacts, and witness real-time transaction updates
             right on your user interface.
           </p>
-          <div class="project-tech-stack">
-            {" "}
-            <button>React</button>
-            <button>Redux</button>
-            <button>CSS</button>
-          </div>
 
           <a
             href="https://github.com/AyushmaanRajput/warlike-current-5989"
@@ -81,12 +72,6 @@ export const Projects = () => {
             money from your contacts, and witness real-time transaction updates
             right on your user interface.
           </p>
-          <div class="project-tech-stack">
-            {" "}
-            <button>React</button>
-            <button>Redux</button>
-            <button>CSS</button>
-          </div>
 
           <a
             href="https://github.com/AyushmaanRajput/warlike-current-5989"
@@ -114,11 +99,6 @@ export const Projects = () => {
             money from your contacts, and witness real-time transaction updates
             right on your user interface.
           </p>
-          <div class="project-tech-stack">
-            <button>React</button>
-            <button>Redux</button>
-            <button>CSS</button>
-          </div>
 
           <a
             href="https://github.com/AyushmaanRajput/warlike-current-5989"
@@ -142,4 +122,16 @@ export const Projects = () => {
 const SECTION = styled.section`
   min-height: 80vh;
   background-color: var(--gray);
+  padding-block: 3rem;
+  border: 2px solid yellow;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .main-project-card {
+    display: flex;
+  }
 `;
