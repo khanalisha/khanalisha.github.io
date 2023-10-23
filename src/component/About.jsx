@@ -2,28 +2,38 @@ import React from "react";
 import styled from "styled-components";
 import { Divider } from "./common/Divider";
 import { Container } from "./common/Container";
+import { Reveal } from "./common/Reveal";
 
 export const About = () => {
   return (
-    <SECTION id="about" className="about section">
-      <Container>
-        <Divider />
+    <Reveal
+      hidden={{
+        opacity: 0,
+        y: 150,
+      }}
+      visible={{ opacity: 1, y: 0 }}
+      delay={2}
+    >
+      <SECTION id="about" className="about section">
+        <Container>
+          <Divider />
 
-        <div className="main-about-content">
-          <div className="about-content">
-            <h2>Who Am I?</h2>
-            <p>
-              Greetings! Alisha khan, a skilled Full stack developer with a
-              passion for creating efficient and user-friendly web application.
-              With the expertise in the both Frontend and Backend technologies.
-            </p>
+          <div className="main-about-content">
+            <div className="about-content">
+              <h2>Who Am I?</h2>
+              <p>
+                Greetings! Alisha khan, a skilled Full stack developer with a
+                passion for creating efficient and user-friendly web
+                application. With the expertise in the both Frontend and Backend
+                technologies.
+              </p>
+            </div>
+            <div className="about-image-container">
+              <img src="/public/AboutImage.png" alt="about-image" />
+            </div>
           </div>
-          <div className="about-image-container">
-            <img src="/public/AboutImage.png" alt="about-image" />
-          </div>
-        </div>
-      </Container>
-      {/* <a
+        </Container>
+        {/* <a
         className="nav-link resume"
         href="/public/Resume.pdf"
         id="resume-link-2"
@@ -31,7 +41,8 @@ export const About = () => {
       >
         Resume
       </a> */}
-    </SECTION>
+      </SECTION>
+    </Reveal>
   );
 };
 

@@ -2,7 +2,7 @@
 
 :root {
   --text: #070403;
-  --gray: rgb(33 33 33);
+  --gray: rgb(56, 56, 56);
   --background: #ffffff;
   --primary: #e17256;
   --header: hsl(0, 0%, 12%);
@@ -10,6 +10,13 @@
   --secondary: #e5cac3;
   --accent: #985443;
   --fs-3: calc(1.313rem + 1vw);
+
+  --h1: 3.5rem;
+  --h2: 2.5rem;
+  --h3: 2rem;
+  --h4: 1.2rem;
+  --h5: 1rem;
+  --p: 1rem;
 }
 *,
 *::before,
@@ -28,13 +35,14 @@ a {
 }
 button {
   cursor: pointer;
+  border: none;
 }
 
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   color: var(--text);
-  background-color: var(--gray);
+  background-color: var(--background);
 }
 /* for CTA/resume button */
 .resume {
@@ -51,20 +59,29 @@ body {
   color: var(--background);
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: var(--h1);
   margin-bottom: 1rem;
   line-height: 1.1;
 }
 
-/* h2 {
+h2 {
   color: var(--primary);
   line-height: 1.1;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   margin-bottom: 2rem;
-  font-size: 3rem;
-} */
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
 
-h2 {
+/* h2 {
   color: var(--primary);
   line-height: 1.2;
   font-family: "Poppins", sans-serif;
@@ -74,11 +91,21 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bol;
-}
+} */
 p {
-  color: var(--background);
+  font-size: var(--p);
+  color: var(--gray);
   opacity: 0.9;
   max-width: 500px;
   letter-spacing: 1px;
   line-height: 1.5;
 }
+
+/* button outline */
+.first-btn {
+  margin-right: 1rem;
+  color: var(--primary) !important;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+}
+

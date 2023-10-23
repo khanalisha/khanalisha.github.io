@@ -45,10 +45,9 @@ const NAVBAR = styled.nav`
   left: 0;
   right: 0;
   z-index: 10000;
-  /* padding: 1.5rem 2.5rem; */
-  /* background-color: var(--background); */
-  border: 2px solid blue;
-  background-color: transparent;
+  height: 8vh;
+  padding: 3rem 2.5rem;
+  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,14 +59,16 @@ const NAVBAR = styled.nav`
     letter-spacing: 2px;
     font-weight: bolder;
     color: var(--text);
+    padding-top: 1rem;
+
     transition: color 0.2s ease-in;
     &:hover {
-      color: var(--background);
+      color: var(--primary);
     }
   }
   a {
     text-decoration: none;
-    color: var(--background);
+    color: var(--text);
     font-size: 1.5 rem;
     transition: color 0.2s ease-in;
     margin-left: 2rem;

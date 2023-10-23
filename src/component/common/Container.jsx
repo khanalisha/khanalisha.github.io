@@ -1,8 +1,8 @@
 import React, { Children } from "react";
 import styled from "styled-components";
 
-export const Container = ({ children }) => {
-  return <CONTAINER>{children}</CONTAINER>;
+export const Container = ({ children, className = "" }) => {
+  return <CONTAINER className={className}>{children}</CONTAINER>;
 };
 const CONTAINER = styled.div`
   width: min(80rem, 100%);
