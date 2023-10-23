@@ -2,6 +2,8 @@ import { Container } from "./common/Container";
 import React from "react";
 import styled from "styled-components";
 import { Reveal } from "./common/Reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Projects = () => {
   return (
@@ -40,7 +42,7 @@ export const Projects = () => {
                   target="_blank"
                   className="project-github-link"
                 >
-                  github
+                  <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   href="https://warlike-current-5989-gamma.vercel.app/"

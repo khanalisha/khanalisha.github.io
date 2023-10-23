@@ -29,7 +29,7 @@ export const NavBar = () => {
       </div>
       <a
         className="nav-link resume"
-        href="/public/Resume.pdf"
+        href="Resume.pdf"
         id="resume-link-1"
         download
       >

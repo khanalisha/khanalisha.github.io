@@ -5,6 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 import Aos from "aos";
 import styled from "styled-components";
 import { Reveal } from "./Reveal";
+import { Calender } from "./Calender";
 
 const Statistics = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const Statistics = () => {
     >
       <SECTION id="statistics">
         <div variants={textVariant()} className="main">
-          <div className="calender-div">
+          {/* <div className="calender-div">
             <h2>Statistics</h2>
             <p className="calender-h1">GitHub Calender.</p>
             <GitHubCalendar
@@ -33,14 +34,15 @@ const Statistics = () => {
               style={{ color: "white" }}
               className="calender-data"
             />
-          </div>
+          </div> */}
+          <Calender />
 
           <div className="git-stats">
             <p>GitHub streak stats</p>
             <a href="https://git.io/streak-stats">
               <img
                 id="github-streak-stats"
-                src="https://github-readme-streak-stats.herokuapp.com?user=khanalisha&theme=transparent&border_radius=15"
+                src="https://github-readme-streak-stats.herokuapp.com?user=khanalisha&theme=cobalt&border_radius=15"
               />
             </a>
           </div>
