@@ -79,7 +79,7 @@ const Statistics = () => {
 export default Statistics;
 
 const SECTION = styled.div`
-  padding-block: 5rem;
+  padding-block: 5rem 2rem;
   h2 {
     line-height: 1.2;
     /* color: black; */

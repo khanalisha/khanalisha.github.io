@@ -22,7 +22,7 @@ export const Calender = () => {
   function handleRender(block, activity) {
     // ReactElement;
     // console.log(activity,block);
-    console.log(block.props["data-level"]);
+    // console.log(block.props["data-level"]);
 
     return block;
   }

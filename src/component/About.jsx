@@ -29,7 +29,7 @@ export const About = () => {
               </p>
             </div>
             <div className="about-image-container">
-              <img src="/public/AboutImage.png" alt="about-image" />
+              <img src="AboutImage.png" alt="about-image" />
             </div>
           </div>
         </Container>
@@ -62,6 +62,7 @@ const SECTION = styled.section`
     }
 
     .about-image-container {
+      width: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,6 +70,47 @@ const SECTION = styled.section`
       img {
         width: 70%;
         object-fit: cover;
+      }
+    }
+  }
+  @media screen and (max-width: 950px) {
+    min-height: 60vh;
+    padding-block: 2rem;
+
+    .main-about-content {
+      padding-block: 3rem;
+      .about-image-container {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+  /* Medium Screen */
+  @media screen and (max-width: 750px) {
+    min-height: 50vh;
+    .main-about-content {
+      .about-image-container {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+  /* Mobile Screens */
+  @media screen and (max-width: 500px) {
+    min-height: 50vh;
+
+    .main-about-content {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .about-content {
+        width: 100%;
+      }
+      .about-image-container {
+        width: 100%;
       }
     }
   }

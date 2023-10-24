@@ -20,7 +20,7 @@ export const Projects = () => {
             <h2>Some of my work</h2>
           </div>
           {/* <!---project1--> */}
-          {/* <div className="main-project-card"> */}
+
           <div className="project-card">
             <div className="main-description">
               <span className="project-title span-1">SwiftPay</span>
@@ -57,9 +57,9 @@ export const Projects = () => {
               <img src="project1.png" alt="" className="project-img" />
             </div>
           </div>
-          {/* </div> */}
+
           {/* <!---project2--> */}
-          {/* <div className="main-project-card"> */}
+
           <div className="project-card">
             <div className="img-div">
               <img src="project2.png" alt="" className="project-img" />
@@ -101,9 +101,9 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          {/* </div> */}
+
           {/* <!---project3--> */}
-          {/* <div className="main-project-card"> */}
+
           <div className="project-card">
             <div className="main-description">
               <span className="project-title span-1">SwiftPay</span>
@@ -141,9 +141,9 @@ export const Projects = () => {
               <img src="project1.png" alt="" className="project-img" />
             </div>
           </div>
-          {/* </div> */}
+
           {/* <!---project4--> */}
-          {/* <div className="main-project-card"> */}
+
           <div className="project-card">
             <div className="img-div">
               <img src="project2.png" alt="" className="project-img" />
@@ -180,7 +180,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          {/* </div> */}
         </Container>
       </SECTION>
     </Reveal>
@@ -189,7 +188,6 @@ export const Projects = () => {
 const SECTION = styled.section`
   min-height: 80vh;
   padding-block: 5.5rem;
-  /* border: 2px solid yellow; */
   h2 {
     display: flex;
     justify-content: center;
@@ -215,7 +213,7 @@ const SECTION = styled.section`
     font-size: 24px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     margin: 0px 0px 16px;
-    color: 000000DE;
+    color: #000000de;
   }
   p {
     font-size: 14px;
@@ -238,5 +236,14 @@ const SECTION = styled.section`
   .project-deployed-link {
     color: #17e55f;
     margin-left: 3rem;
+  }
+
+  @media screen and (max-width: 950px) {
+  }
+  /* Medium Screen */
+  @media screen and (max-width: 750px) {
+  }
+  /* Mobile Screens */
+  @media screen and (max-width: 500px) {
   }
 `;

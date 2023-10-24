@@ -151,26 +151,9 @@ const SECTION = styled.section`
     margin: 0;
   }
   .resume {
-    /* padding: 0rem 0rem; */
     font-size: 1rem;
+  }
 
-    /* border: none; */
-  }
-  /* .Toggle-skill {
-    border: var(--background);
-    width: 45%;
-    height: 27px;
-    border-radius: 100px;
-    font-size: 1.15rem;
-  }
-  
-  .Toggle-tools {
-    border: var(--background);
-    width: 45%;
-    height: 27px;
-    border-radius: 100px;
-    font-size: 1.15rem;
-  } */
   .all-skill {
     /* border: 2px solid red; */
     display: grid;
@@ -203,4 +186,77 @@ const SECTION = styled.section`
       margin-top: 1rem;
     }
   }
+  @media screen and (max-width: 950px) {
+    min-height: 60vh;
+    padding-block: 3rem;
+    /* border: 2px solid green; */
+    .skills-container {
+      gap: 1rem;
+    }
+    .all-skill {
+      /* border: 2px solid red; */
+      grid-template-columns: auto auto auto auto;
+      width: 50%;
+
+      .skills-card {
+        height: auto;
+        /* border: 2px solid yellow; */
+        min-width: auto;
+        margin: 0.5rem;
+      }
+
+      .skills-card-img {
+        /* border: 3px solid blue; */
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  /* Medium Screen */
+  @media screen and (max-width: 750px) {
+    min-height: 50vh;
+    padding-block: 2rem;
+    .Description-skill {
+      /* border: 2px solid blue; */
+      width: 100%;
+      text-align: center;
+    }
+    /* border: 2px solid green; */
+    .Toggle {
+      margin-inline: auto;
+    }
+    .skills-container {
+      flex-direction: column;
+    }
+    .all-skill {
+      width: 100%;
+    }
+  }
+  /* Mobile Screens */
+  @media screen and (max-width: 500px) {
+    .all-skill {
+      grid-template-columns: auto auto auto;
+    }
+    .skills-card-img {
+      /* border: 3px solid blue; */
+      width: 50px;
+      height: 50px;
+    }
+  }
 `;
+
+/* .Toggle-skill {
+    border: var(--background);
+    width: 45%;
+    height: 27px;
+    border-radius: 100px;
+    font-size: 1.15rem;
+  }
+  
+  .Toggle-tools {
+    border: var(--background);
+    width: 45%;
+    height: 27px;
+    border-radius: 100px;
+    font-size: 1.15rem;
+  } */

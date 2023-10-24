@@ -109,3 +109,28 @@ p {
   border: 1px solid var(--primary);
 }
 
+/* Media queries */
+/* Smaller sizes */
+@media screen and (max-width: 950px) {
+  :root {
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.5rem;
+    --h4: 1rem;
+    --h5: 0.85rem;
+    --p: 0.85rem;
+  }
+}
+/* Medium Screen */
+@media screen and (max-width: 750px) {
+  h1 {
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+}
+
+/* Mobile Screen */
