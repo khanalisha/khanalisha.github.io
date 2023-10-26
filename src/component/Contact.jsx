@@ -3,7 +3,11 @@ import styled from "styled-components";
 import { Reveal } from "./common/Reveal";
 import { Container } from "./common/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
@@ -38,68 +42,105 @@ export const Contact = () => {
             </a>
           </div>
         </Reveal>
+
+        {/* <hr /> */}
+
         <div className="all-links">
-          <Reveal
-            hidden={{
-              opacity: 0,
-              y: -150,
-            }}
-            visible={{ opacity: 1, y: 0 }}
-          >
-            <a
-              href="https://github.com/khanalisha"
-              id="contact-github"
-              target="_blank"
+          <div className="div-1">
+            <Reveal
+              hidden={{
+                opacity: 0,
+                y: -150,
+              }}
+              visible={{ opacity: 1, y: 0 }}
             >
-              <FontAwesomeIcon icon={faGithub} className="Git" />
-            </a>
-          </Reveal>
-          <Reveal
-            hidden={{
-              opacity: 0,
-              y: -150,
-            }}
-            visible={{ opacity: 1, y: 0 }}
-          >
-            <a
-              href="https://www.linkedin.com/in/alisha-khan-9a561a257"
-              id="contact-linkedin"
-              target="_blank"
+              <div className="git-div social">
+                <a
+                  href="https://github.com/khanalisha"
+                  id="contact-github"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} className="Git" />
+                </a>
+              </div>
+            </Reveal>
+            <Reveal
+              hidden={{
+                opacity: 0,
+                y: -150,
+              }}
+              visible={{ opacity: 1, y: 0 }}
             >
-              <FontAwesomeIcon icon={faLinkedin} className="linkdin" />
-            </a>
-          </Reveal>
-          <Reveal
-            hidden={{
-              opacity: 0,
-              y: -150,
-            }}
-            visible={{ opacity: 1, y: 0 }}
-          >
-            <button id="contact-phone">
-              <FontAwesomeIcon icon={faPhoneVolume} className="phone" />
-            </button>
-          </Reveal>
+              <div className="linkdin-div social">
+                <a
+                  href="https://www.linkedin.com/in/alisha-khan-9a561a257"
+                  id="contact-linkedin"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} className="linkdin" />
+                </a>
+              </div>
+            </Reveal>
+            <Reveal
+              hidden={{
+                opacity: 0,
+                y: -150,
+              }}
+              visible={{ opacity: 1, y: 0 }}
+            >
+              <div className="phone-div social">
+                <button id="contact-phone">
+                  {/* <FontAwesomeIcon icon={faPhoneVolume} className="phone" /> */}
+                  <FontAwesomeIcon icon={faTwitter} className="phone" />
+                </button>
+              </div>
+            </Reveal>
+          </div>
+
+          <div className="div-2">
+            <p className="copy-right">
+              © 2023 Alisha khan
+              <a href="#home">Coding Stella</a>
+            </p>
+          </div>
         </div>
-        <hr />
-        <hr className="small" />
+
+        {/* <hr className="small" /> */}
       </Container>
     </SECTION>
   );
 };
 
 const SECTION = styled.section`
-  min-height: 90vh;
-  padding-block: 5rem;
+  min-height: 80vh;
+  /* border: 2px solid green; */
+  padding-block: 6rem 0rem;
+  display: flex;
+  align-items: flex-end;
+  > div {
+  }
   .all-links {
-    /* margin: 21rem; */
-    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .div-1 {
+    display: flex;
+  }
+  .div-2 {
+    /* border: 2px solid pink; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
   }
 
+  .social {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+  }
   .Git {
     width: 50px;
     height: 30px;
@@ -119,6 +160,7 @@ const SECTION = styled.section`
     max-width: 500px;
     margin-inline: auto;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   .email-box {
@@ -158,11 +200,13 @@ const SECTION = styled.section`
     align-items: center;
   }
   hr {
-    margin-block: 2rem;
+    /* margin-block: 2rem;
     background-color: var(--secondary);
     opacity: 0.7;
     width: 60%;
-    margin-inline: auto;
+    margin-inline: auto; */
+    /* margin-block: 9rem 9rem; */
+    /* margin-top: 20rem; */
   }
   .small {
     width: 30%;

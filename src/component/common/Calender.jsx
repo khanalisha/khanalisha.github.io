@@ -1,5 +1,6 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
+import styled from "styled-components";
 
 export const Calender = () => {
   const selectLastHalfYear = (contributions) => {
@@ -27,7 +28,7 @@ export const Calender = () => {
     return block;
   }
   return (
-    <div className="calender-container">
+    <SECTION className="calender-container">
       <GitHubCalendar
         username="khanalisha"
         transformData={selectLastHalfYear}
@@ -43,6 +44,11 @@ export const Calender = () => {
           dark: ["#304033", "#10611E", "#1C9030", "#25AF3C", "#69DB7C"],
         }}
       />
-    </div>
+    </SECTION>
   );
 };
+
+const SECTION = styled.div`
+
+  
+`

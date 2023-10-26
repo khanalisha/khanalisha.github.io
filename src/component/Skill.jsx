@@ -118,7 +118,7 @@ export const Skill = () => {
 
 const SECTION = styled.section`
   min-height: 80vh;
-  padding-block: 7rem;
+  padding-block: 9rem 7rem;
   /* border: 2px solid green; */
   .skills-container {
     display: flex;
