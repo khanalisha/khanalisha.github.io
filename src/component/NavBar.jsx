@@ -289,9 +289,11 @@ const NAVBAR = styled.nav`
   left: 0;
   right: 0;
   z-index: 100;
+  width: 100%;
+  max-width: 100%;
   /* padding: 2.5rem;
   */
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -314,12 +316,12 @@ const NAVBAR = styled.nav`
     font-family: "Bestermind", sans-serif;
     letter-spacing: 2px;
     font-weight: bolder;
-    color: #333;
+    color: var(--text);
     padding-top: 1rem;
 
     transition: color 0.2s ease-in;
     &:hover {
-      color: pink;
+      color: var(--primary);
     }
   }
   a {
@@ -329,7 +331,7 @@ const NAVBAR = styled.nav`
     transition: color 0.2s ease-in;
     margin-left: 2rem;
     &:hover {
-      color: pink;
+      color: var(--primary);
     }
   }
   .nav-link {
@@ -349,7 +351,7 @@ const NAVBAR = styled.nav`
   }
   .nav-link:hover::after {
     transform: scaleX(1);
-    background-color: pink;
+    background-color: var(--primary);
     /* transform-origin:left; */
   }
   @media (max-width: 950px) {
@@ -378,8 +380,8 @@ const HamburgerIcon = styled.div`
     padding: 0.5rem;
     border-radius: 0.25rem;
     &:hover {
-      color: pink;
-      border-color: pink;
+      color: var(--primary);
+      border-color: var(--primary);
       transform: scale(1.01);
     }
   }

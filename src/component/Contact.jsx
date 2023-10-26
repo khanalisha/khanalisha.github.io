@@ -4,8 +4,10 @@ import { Reveal } from "./common/Reveal";
 import { Container } from "./common/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faFacebookF,
   faGithub,
   faLinkedin,
+  faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
@@ -43,7 +45,7 @@ export const Contact = () => {
           </div>
         </Reveal>
 
-        {/* <hr /> */}
+        <hr />
 
         <div className="all-links">
           <div className="div-1">
@@ -77,7 +79,7 @@ export const Contact = () => {
                   id="contact-linkedin"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} className="linkdin" />
+                  <FontAwesomeIcon icon={faLinkedinIn} className="linkdin" />
                 </a>
               </div>
             </Reveal>
@@ -89,10 +91,24 @@ export const Contact = () => {
               visible={{ opacity: 1, y: 0 }}
             >
               <div className="phone-div social">
-                <button id="contact-phone">
+                <div id="contact-phone">
                   {/* <FontAwesomeIcon icon={faPhoneVolume} className="phone" /> */}
                   <FontAwesomeIcon icon={faTwitter} className="phone" />
-                </button>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal
+              hidden={{
+                opacity: 0,
+                y: -150,
+              }}
+              visible={{ opacity: 1, y: 0 }}
+            >
+              <div className="facebook-div social">
+                <a href="" id="contact-facebook" target="_blank">
+                  <FontAwesomeIcon icon={faFacebookF} className="facebook" />
+                </a>
               </div>
             </Reveal>
           </div>
@@ -100,7 +116,9 @@ export const Contact = () => {
           <div className="div-2">
             <p className="copy-right">
               © 2023 Alisha khan
-              <a href="#home">Coding Stella</a>
+              <a href="#home" style={{ marginLeft: "10px" }}>
+                Coding Stella
+              </a>
             </p>
           </div>
         </div>
@@ -114,7 +132,7 @@ export const Contact = () => {
 const SECTION = styled.section`
   min-height: 80vh;
   /* border: 2px solid green; */
-  padding-block: 6rem 0rem;
+  padding-block: 6rem 0.5rem;
   display: flex;
   align-items: flex-end;
   > div {
@@ -122,37 +140,52 @@ const SECTION = styled.section`
   .all-links {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
   }
   .div-1 {
     display: flex;
+    gap: 2rem;
   }
   .div-2 {
-    /* border: 2px solid pink; */
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    cursor: pointer;
   }
 
   .social {
-    /* border: 2px solid black; */
+    border: 1px solid gray;
+    border-radius: 50% 50% 50% 50%;
+    background-color: var(--gray);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
   }
   .Git {
-    width: 50px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    color: var(--background);
+  }
+  .facebook {
+    color: var(--background);
+    width: 25px;
+    height: 25px;
   }
   .linkdin {
-    width: 50px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    color: var(--background);
   }
 
   .phone {
-    width: 50px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--gray);
+    color: var(--background);
   }
 
   h2 {
@@ -199,15 +232,7 @@ const SECTION = styled.section`
     justify-content: center;
     align-items: center;
   }
-  hr {
-    /* margin-block: 2rem;
-    background-color: var(--secondary);
-    opacity: 0.7;
-    width: 60%;
-    margin-inline: auto; */
-    /* margin-block: 9rem 9rem; */
-    /* margin-top: 20rem; */
-  }
+
   .small {
     width: 30%;
     margin-inline: auto;

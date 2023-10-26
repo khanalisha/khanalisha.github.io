@@ -4,31 +4,22 @@ import { Reveal } from "./common/Reveal";
 
 export const Home = () => {
   return (
-    <SECTION id="home">
-      <div className="home-content">
-        <div className="image-container">
-          <Reveal
-            hidden={{
-              opacity: 0,
-              x: -150,
-            }}
-            visible={{ opacity: 1, x: 0 }}
-          >
+    <Reveal
+      hidden={{
+        opacity: 0,
+        y: 150,
+      }}
+      visible={{ opacity: 1, y: 0 }}
+    >
+      <SECTION id="home">
+        <div className="home-content">
+          <div className="image-container">
             <img
               src="profile_image.jpeg"
               alt="Profile image"
               className="home-img"
             />
-          </Reveal>
-        </div>
-        <Reveal
-          hidden={{
-            opacity: 0,
-            y: -150,
-          }}
-          visible={{ opacity: 1, y: 0 }}
-          delay={2}
-        >
+          </div>
           <div>
             <span>Web Developer</span>
             <h1 id="user-detail-name">Alisha khan</h1>
@@ -54,9 +45,9 @@ export const Home = () => {
               Resume
             </a>
           </div>
-        </Reveal>
-      </div>
-    </SECTION>
+        </div>
+      </SECTION>
+    </Reveal>
   );
 };
 

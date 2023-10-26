@@ -23,6 +23,7 @@ const Statistics = () => {
       <SECTION id="statistics">
         <Container>
           <div variants={textVariant()} className="main">
+            <p className="p1">Calender</p>
             <div className="Calender">
               <Calender />
             </div>
@@ -32,7 +33,7 @@ const Statistics = () => {
                 <a href="https://git.io/streak-stats">
                   <img
                     id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com?user=khanalisha&theme=cobalt&border_radius=15"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=khanalisha&theme=graywhite&border_radius=15"
                   />
                 </a>
               </div>
@@ -44,7 +45,7 @@ const Statistics = () => {
                 <a href="https://github-readme-stats.vercel.app/api?username=khanalisha&show_icons=true&theme=cobalt&border_radius=12.5">
                   <img
                     id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=khanalisha&show_icons=true&theme=transparent&border_radius=12.5&border_color=green"
+                    src="https://github-readme-stats.vercel.app/api?username=khanalisha&show_icons=true&theme=graywhite&border_radius=12.5&border_color=green"
                   />
                 </a>
               </div>
@@ -69,7 +70,7 @@ const Statistics = () => {
 export default Statistics;
 
 const SECTION = styled.div`
-  padding-block: 9rem 2rem;
+  padding-block: 7rem 2rem;
   h2 {
     line-height: 1.2;
     /* color: black; */
@@ -84,7 +85,12 @@ const SECTION = styled.div`
     align-items: center;
     padding-bottom: 2rem;
   }
+  .p1 {
+    margin-left: 9rem;
+    padding: 1rem;
 
+    line-height: 2em;
+  }
   .stats-div {
     display: flex;
     align-items: center;
