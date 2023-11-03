@@ -36,7 +36,7 @@ export const About = () => {
         <a
           className="nav-link resume"
           href="/public/Resume.pdf"
-          id="resume-link-2 resume-button-2"
+          id="resume-link-2"
           download
           style={{ display: "none" }}
         >

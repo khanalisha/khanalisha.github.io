@@ -31,23 +31,25 @@ export const Home = () => {
               knowledge enrichment but also aligns with its ambitious goals,
               fostering mutual growth and success
             </p>
-
-            <a
-              className="nav-link resume first-btn"
-              href="#contact"
-              id="resume-button-1"
-            >
-              Stay Connected
-            </a>
-
-            <a
-              className="nav-link resume"
-              href="Resume.pdf"
-              id="resume-link-2 resume-button-2"
-              download
-            >
-              Resume
-            </a>
+            <button id="resume-button-1" className="btn">
+              <a
+                className="nav-link resume first-btn"
+                href="#contact"
+                id="resume-button-1"
+              >
+                Stay Connected
+              </a>
+            </button>
+            <button id="resume-button-2" className="btn">
+              <a
+                className="nav-link resume"
+                href="Resume.pdf"
+                id="resume-link-2"
+                download
+              >
+                Resume
+              </a>
+            </button>
           </div>
         </div>
       </SECTION>
@@ -106,6 +108,15 @@ const SECTION = styled.section`
         margin-bottom: 3rem;
         max-width: 400px;
         color: var(--gray);
+      }
+      .btn {
+        /* margin-right: 1rem; */
+        color: var(--primary) !important;
+        background-color: transparent;
+        border: 1px solid var(--primary);
+        padding: 0.5em 1.25em;
+        border-radius: 50px;
+        border: none;
       }
     }
   }
