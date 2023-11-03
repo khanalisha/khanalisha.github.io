@@ -35,7 +35,7 @@ export const Home = () => {
               <a
                 className="nav-link resume first-btn"
                 href="#contact"
-                id="resume-button-1"
+                id="resume-link-1"
               >
                 Stay Connected
               </a>
