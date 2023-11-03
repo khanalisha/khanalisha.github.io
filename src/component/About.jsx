@@ -20,8 +20,8 @@ export const About = () => {
 
           <div className="main-about-content">
             <div className="about-content">
-              <h2>Who Am I?</h2>
-              <p>
+              <h2 id="user-detail-name">Who Am I?</h2>
+              <p id="user-detail-intro">
                 Greetings! Alisha khan, a skilled Full stack developer with a
                 passion for creating efficient and user-friendly web
                 application. With the expertise in the both Frontend and Backend
