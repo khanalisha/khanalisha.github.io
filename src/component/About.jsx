@@ -20,7 +20,7 @@ export const About = () => {
 
           <div className="main-about-content" id="user-detail-intro">
             <div className="about-content">
-              <h2 id="user-detail-name">Who Am I?</h2>
+              <h2 id="user-detail-name">About me?</h2>
               <p>
                 Greetings! Alisha khan, a skilled Full stack developer with a
                 passion for creating efficient and user-friendly web
