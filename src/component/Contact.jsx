@@ -126,6 +126,15 @@ export const Contact = () => {
               6201984754
             </div>
           </Reveal>
+          <a
+            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=8282alishakhan@gmail.com"
+            id="contact-email"
+            target="_blank"
+            className="resume"
+            style={{ display: "none" }}
+          >
+            8282alishakhan@gmail.com
+          </a>
 
           {/* !*****! */}
 
