@@ -150,7 +150,7 @@ export const Projects = () => {
 
           {/* <!---project3--> */}
 
-          {/* <div className="project-card">
+          <div className="project-card">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -210,11 +210,11 @@ export const Projects = () => {
                 <img src="project1.png" alt="" className="project-img" />
               </div>
             </Reveal>
-          </div> */}
+          </div>
 
           {/* <!---project4--> */}
 
-          {/* <div className="project-card">
+          <div className="project-card">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -273,7 +273,7 @@ export const Projects = () => {
                 </div>
               </div>
             </Reveal>
-          </div> */}
+          </div>
         </Container>
       </SECTION>
     </Reveal>

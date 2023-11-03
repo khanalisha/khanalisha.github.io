@@ -32,7 +32,11 @@ export const Home = () => {
               fostering mutual growth and success
             </p>
 
-            <a className="nav-link resume first-btn" href="#contact">
+            <a
+              className="nav-link resume first-btn"
+              href="#contact"
+              id="resume-button-1"
+            >
               Stay Connected
             </a>
 
