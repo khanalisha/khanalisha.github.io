@@ -33,14 +33,15 @@ export const About = () => {
             </div>
           </div>
         </Container>
-        {/* <a
-        className="nav-link resume"
-        href="/public/Resume.pdf"
-        id="resume-link-2"
-        download
-      >
-        Resume
-      </a> */}
+        <a
+          className="nav-link resume"
+          href="/public/Resume.pdf"
+          id="resume-link-2 resume-button-2"
+          download
+          style={{ display: "none" }}
+        >
+          Resume
+        </a>
       </SECTION>
     </Reveal>
   );

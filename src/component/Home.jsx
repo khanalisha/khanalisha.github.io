@@ -39,7 +39,7 @@ export const Home = () => {
             <a
               className="nav-link resume"
               href="Resume.pdf"
-              id="resume-link-2"
+              id="resume-link-2 resume-button-2"
               download
             >
               Resume

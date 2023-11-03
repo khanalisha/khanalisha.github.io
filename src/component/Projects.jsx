@@ -46,7 +46,7 @@ export const Projects = () => {
                 </p>
                 <div className="p-view">
                   <a
-                    href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                    href="https://github.com/khanalisha/warlike-current-5989"
                     target="_blank"
                     className="project-github-link"
                   >
@@ -118,14 +118,11 @@ export const Projects = () => {
                   exploring the world. Travellish is an online travel website
                   that offers a wide range of travel-related services to make
                   your travel experience hassle-free, fun and memorable.It is
-                  travel & hotel booking website to book flight and hotel.Users
-                  can view, search and filter from a wide range of flight &
-                  hotel to find their own choice.Application also cover user and
-                  admin side.
+                  travel & hotel booking website to book flight and hotel.
                 </p>
                 <div className="p-view">
                   <a
-                    href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                    href="https://github.com/khanalisha/huge-coast-1878"
                     target="_blank"
                     className="project-github-link"
                   >
@@ -136,7 +133,7 @@ export const Projects = () => {
                     />
                   </a>
                   <a
-                    href="https://warlike-current-5989-gamma.vercel.app/"
+                    href="https://lively-marigold-c98b3e.netlify.app/"
                     target="_blank"
                     class="project-deployed-link"
                   >
@@ -153,7 +150,7 @@ export const Projects = () => {
 
           {/* <!---project3--> */}
 
-          <div className="project-card">
+          {/* <div className="project-card">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -213,11 +210,11 @@ export const Projects = () => {
                 <img src="project1.png" alt="" className="project-img" />
               </div>
             </Reveal>
-          </div>
+          </div> */}
 
           {/* <!---project4--> */}
 
-          <div className="project-card">
+          {/* <div className="project-card">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -276,7 +273,7 @@ export const Projects = () => {
                 </div>
               </div>
             </Reveal>
-          </div>
+          </div> */}
         </Container>
       </SECTION>
     </Reveal>
