@@ -213,14 +213,16 @@ function Navigation() {
           Contact
         </a>
       </div>
-      <a
-        className="nav-link resume"
-        href="Resume.pdf"
-        id="resume-link-1"
-        download
-      >
-        Resume
-      </a>
+      <button id="resume-button-1" className="btn">
+        <a
+          className="nav-link resume"
+          href="Resume.pdf"
+          id="resume-link-1"
+          download
+        >
+          Resume
+        </a>
+      </button>
     </>
   );
 }
@@ -354,6 +356,17 @@ const NAVBAR = styled.nav`
     background-color: var(--primary);
     /* transform-origin:left; */
   }
+
+  .btn {
+    /* margin-right: 1rem; */
+    color: var(--primary) !important;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    padding: 0.5em 1.25em;
+    border-radius: 50px;
+    border: none;
+  }
+
   @media (max-width: 950px) {
     box-shadow: 0 2px 8px 0 rgba(0 0 0 / 0.2);
     padding: 1rem;

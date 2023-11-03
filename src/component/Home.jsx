@@ -34,7 +34,7 @@ export const Home = () => {
             <button id="resume-button-1" className="btn">
               <a
                 className="nav-link resume first-btn"
-                href="Resume.pdf"
+                href="#contact"
                 id="resume-link-1"
               >
                 Stay Connected
