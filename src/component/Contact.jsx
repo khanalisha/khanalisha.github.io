@@ -83,6 +83,7 @@ export const Contact = () => {
                 </a>
               </div>
             </Reveal>
+
             <Reveal
               hidden={{
                 opacity: 0,
@@ -112,6 +113,21 @@ export const Contact = () => {
               </div>
             </Reveal>
           </div>
+
+          {/* !*****! */}
+          <Reveal
+            hidden={{
+              opacity: 0,
+              y: -150,
+            }}
+            visible={{ opacity: 1, y: 0 }}
+          >
+            <div id="contact-phone" style={{ display: "none" }}>
+              6201984754
+            </div>
+          </Reveal>
+
+          {/* !*****! */}
 
           <div className="div-2">
             <p className="copy-right">
