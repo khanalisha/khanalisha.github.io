@@ -34,7 +34,7 @@ export const Home = () => {
             <button id="resume-button-1" className="btn">
               <a
                 className="nav-link resume first-btn"
-                href="#contact"
+                href="Resume.pdf"
                 id="resume-link-1"
               >
                 Stay Connected
@@ -73,6 +73,7 @@ const SECTION = styled.section`
     top: 50%;
     left: -17%;
     transform: translateY(-50%);
+
     img {
       height: 100%;
       width: 110%;
