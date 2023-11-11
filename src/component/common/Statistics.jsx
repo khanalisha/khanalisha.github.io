@@ -23,7 +23,7 @@ const Statistics = () => {
       <SECTION id="statistics">
         <Container>
           <div variants={textVariant()} className="main">
-            <p className="p1">Calender</p>
+            <h3 className="p1">Calender</h3>
             <div className="Calender">
               <Calender />
             </div>
@@ -51,14 +51,16 @@ const Statistics = () => {
               </div>
             </div>
             {/* multi langauge */}
-            <p className="p3">GitHub stats</p>
-            <div className="git-card">
-              <a href="https://github-readme-stats.vercel.app/api?username=khanalisha&show_icons=true&theme=cobalt&border_radius=12.5">
-                <img
-                  id="github-top-langs"
-                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=khanalisha&layout=compact&theme=transparent&border_radius=12.5"
-                />
-              </a>
+            <div className="p3">
+              <p className="git-p">GitHub stats</p>
+              <div className="git-card">
+                <a href="https://github-readme-stats.vercel.app/api?username=khanalisha&show_icons=true&theme=cobalt&border_radius=12.5">
+                  <img
+                    id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=khanalisha&layout=compact&theme=transparent&border_radius=12.5"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </Container>
@@ -75,7 +77,10 @@ const SECTION = styled.div`
     line-height: 1.2;
     /* color: black; */
   }
-  p {
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 1.2;
     color: #373636;
   }
@@ -86,9 +91,6 @@ const SECTION = styled.div`
     padding-bottom: 2rem;
   }
   .p1 {
-    margin-left: 9rem;
-    padding: 1rem;
-
     line-height: 2em;
   }
   .stats-div {
@@ -98,13 +100,29 @@ const SECTION = styled.div`
     gap: 0.5rem;
     padding-bottom: 1rem;
   }
-  .git-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .p3 {
-    /* border: 2px solid yellow; */
-    margin-left: 35rem;
+    text-align: center;
+    .git-p {
+      display: inline-block;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .stats-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .p1 {
+      align-items: center;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;

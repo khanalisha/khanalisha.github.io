@@ -262,4 +262,137 @@ const SECTION = styled.section`
     width: 30%;
     margin-inline: auto;
   }
+
+  @media screen and (max-width: 950px) {
+    min-height: 80vh;
+    /* border: 2px solid green; */
+    padding-block: 6rem 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    > div {
+    }
+
+    .all-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .div-1 {
+      display: flex;
+      gap: 2rem;
+    }
+    .div-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      cursor: pointer;
+    }
+
+    .social {
+      border: 1px solid gray;
+      border-radius: 50% 50% 50% 50%;
+      background-color: var(--gray);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+    }
+    .Git {
+      width: 25px;
+      height: 25px;
+      color: var(--background);
+    }
+    .facebook {
+      color: var(--background);
+      width: 25px;
+      height: 25px;
+    }
+    .linkdin {
+      width: 25px;
+      height: 25px;
+      color: var(--background);
+    }
+
+    .phone {
+      width: 25px;
+      height: 25px;
+      background-color: var(--gray);
+      color: var(--background);
+    }
+
+    h2 {
+      text-align: center;
+      max-width: 500px;
+      margin-inline: auto;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .email-box {
+      border: 3px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: min(25rem, 100%);
+      margin-inline: auto;
+      /* height: 45px; */
+      border-radius: 50px;
+      padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+      margin-bottom: 8rem;
+      /* margin-left: 30rem;
+    margin-top: 5rem; */
+      input {
+        /* margin-left: 0.5rem; */
+        color: inherit;
+        padding: 0.25rem;
+        border: none;
+        font-size: 1.25rem;
+        &:active,
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    .icon-email {
+      width: 50px;
+      height: 30px;
+    }
+    #contact-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .small {
+      width: 30%;
+      margin-inline: auto;
+    }
+  }
+
+  /* Medium Screen */
+  @media screen and (max-width: 750px) {
+    min-height: 50vh;
+
+    .all-links {
+      display: flex;
+      gap: 4rem;
+      padding: 1rem;
+    }
+  }
+  // for Mobile screen
+  @media screen and (max-width: 500px) {
+    min-height: 50vh;
+    .div-1 {
+      display: flex;
+      gap: 5rem;
+    }
+    .div-2 {
+      display: none;
+    }
+  }
 `;

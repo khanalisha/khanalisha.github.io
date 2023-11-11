@@ -339,6 +339,17 @@ const SECTION = styled.section`
   }
 
   @media screen and (max-width: 950px) {
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: var(--shadow-1);
+    }
+    .project-img {
+      width: 400px;
+      height: 250px;
+    }
   }
   /* Medium Screen */
   @media screen and (max-width: 750px) {
