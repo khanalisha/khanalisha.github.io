@@ -389,7 +389,7 @@ const SECTION = styled.section`
     min-height: 50vh;
     .div-1 {
       display: flex;
-      gap: 5rem;
+      gap: 3rem;
     }
     .div-2 {
       display: none;
