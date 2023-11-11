@@ -1493,7 +1493,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     min-height: 50vh;
     .div-1 {
       display: flex;
-      gap: 5rem;
+      gap: 3rem;
     }
     .div-2 {
       display: none;
