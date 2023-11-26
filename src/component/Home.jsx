@@ -13,14 +13,22 @@ export const Home = () => {
     >
       <SECTION id="home">
         <div className="home-content">
-          <div className="image-container">
-            <img
-              src="profile_image.jpeg"
-              alt="Profile image"
-              className="home-img"
-            />
-          </div>
-          <div>
+          <Reveal
+            hidden={{
+              opacity: 0,
+              y: 150,
+            }}
+            visible={{ opacity: 1, y: 0 }}
+          >
+            <div className="image-container">
+              <img
+                src="profile_image.jpeg"
+                alt="Profile image"
+                className="home-img"
+              />
+            </div>
+          </Reveal>
+          <div className="second-div">
             <span>Web Developer</span>
             <h1 id="user-detail-name">Alisha khan</h1>
             <p id="user-detail-intro">
@@ -31,25 +39,27 @@ export const Home = () => {
               knowledge enrichment but also aligns with its ambitious goals,
               fostering mutual growth and success
             </p>
-            <button id="resume-button-1" className="btn">
-              <a
-                className="nav-link resume first-btn"
-                href="#contact"
-                id="resume-link-1"
-              >
-                Stay Connected
-              </a>
-            </button>
-            <button id="resume-button-2" className="btn">
-              <a
-                className="nav-link resume"
-                href="Resume.pdf"
-                id="resume-link-2"
-                download
-              >
-                Resume
-              </a>
-            </button>
+            <div className="btn-div">
+              <button id="resume-button-1" className="btn">
+                <a
+                  className="nav-link resume first-btn"
+                  href="#contact"
+                  id="resume-link-1"
+                >
+                  Stay Connected
+                </a>
+              </button>
+              <button id="resume-button-2" className="btn">
+                <a
+                  className="nav-link resume"
+                  href="Resume.pdf"
+                  id="resume-link-2"
+                  download
+                >
+                  Resume
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </SECTION>
@@ -58,21 +68,49 @@ export const Home = () => {
 };
 
 const SECTION = styled.section`
-  display: flex;
   gap: 2rem;
-  justify-content: flex-end;
+
   min-height: 100vh;
   background-color: var(--background);
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 8rem;
+    /* padding-inline: 20rem 5rem; */
+    padding-inline: 15rem 5rem;
+    gap: 8rem;
+    span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+      color: var(--gray);
+    }
+
+    p {
+      margin-bottom: 2rem;
+      max-width: 400px;
+      color: var(--gray);
+    }
+    .btn {
+      color: var(--primary) !important;
+      background-color: transparent;
+      border: 1px solid var(--primary);
+      padding: 0.5em 1.25em;
+      border-radius: 50px;
+      border: none;
+    }
+  }
 
   .image-container {
     width: 22.5rem;
     height: 22.5rem;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
+
     top: 50%;
-    left: -17%;
-    transform: translateY(-50%);
 
     img {
       height: 100%;
@@ -81,21 +119,22 @@ const SECTION = styled.section`
       object-fit: cover;
     }
   }
+  .second-div {
+    /* border: 2px solid blue; */
+  }
   h1 {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
 
-  .home-content {
-    width: 70%;
-    padding-block: 8rem;
-    padding-inline: 20rem 5rem;
-    background-color: var(--background);
-    color: var(--gray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    div {
+  /*large Screen*/
+
+  @media screen and (max-width: 1024px) {
+    .home-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-inline: 10rem 3rem;
+      gap: 4rem;
       span {
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -106,12 +145,11 @@ const SECTION = styled.section`
       }
 
       p {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         max-width: 400px;
         color: var(--gray);
       }
       .btn {
-        /* margin-right: 1rem; */
         color: var(--primary) !important;
         background-color: transparent;
         border: 1px solid var(--primary);
@@ -119,6 +157,136 @@ const SECTION = styled.section`
         border-radius: 50px;
         border: none;
       }
+    }
+    h1 {
+      padding-top: 1rem;
+    }
+    .image-container {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 70%;
+      overflow: hidden;
+
+      top: 50%;
+
+      img {
+        height: 100%;
+        width: 110%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /*medium Scren */
+  @media screen and (max-width: 768px) {
+    .home-content {
+      padding-inline: 5rem 2rem;
+      gap: 2rem;
+    }
+
+    .image-container {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    h1 {
+      padding-top: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .home-content {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout */
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding-inline: 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .image-container {
+      /* width: 100%;
+       height: auto; */
+
+      width: 20rem;
+      height: 20rem;
+      margin-bottom: 1rem; /* Add some space between image and text */
+    }
+
+    h1 {
+      padding-top: 0.5rem; /* Adjusted padding for smaller screens */
+    }
+
+    p {
+      max-width: 100%; /* Full width for text on smaller screens */
+    }
+    .btn-div {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .home-content {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout */
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding-inline: 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .image-container {
+      /* width: 100%;
+       height: auto; */
+
+      width: 17rem;
+      height: 17rem;
+      margin-bottom: 1rem; /* Add some space between image and text */
+    }
+
+    h1 {
+      padding-top: 0.5rem; /* Adjusted padding for smaller screens */
+    }
+
+    p {
+      max-width: 100%; /* Full width for text on smaller screens */
+    }
+    .btn-div {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
+    }
+  }
+
+  @media screen and (min-width: 425px) and (max-width: 740px) {
+    .home-content {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout */
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding-inline: 1rem; /* Adjusted padding for medium screens */
+    }
+
+    .image-container {
+      width: 20rem;
+      height: 20rem;
+      margin-bottom: 1rem; /* Add some space between image and text */
+    }
+
+    h1 {
+      padding-top: 0.5rem; /* Adjusted padding for medium screens */
+    }
+
+    p {
+      max-width: 100%; /* Full width for text on medium screens */
+    }
+    .btn-div {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
     }
   }
 `;

@@ -156,7 +156,6 @@ export const Contact = () => {
 
 const SECTION = styled.section`
   min-height: 80vh;
-  /* border: 2px solid green; */
   padding-block: 6rem 0.5rem;
   display: flex;
   align-items: flex-end;
@@ -228,14 +227,12 @@ const SECTION = styled.section`
     align-items: center;
     width: min(25rem, 100%);
     margin-inline: auto;
-    /* height: 45px; */
+
     border-radius: 50px;
     padding: 0.25rem 0.25rem 0.25rem 0.75rem;
     margin-bottom: 8rem;
-    /* margin-left: 30rem;
-    margin-top: 5rem; */
+
     input {
-      /* margin-left: 0.5rem; */
       color: inherit;
       padding: 0.25rem;
       border: none;
@@ -383,6 +380,41 @@ const SECTION = styled.section`
       gap: 4rem;
       padding: 1rem;
     }
+    .email-box {
+      border: 3px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: min(25rem, 100%);
+      margin-inline: auto;
+      /* height: 45px; */
+      border-radius: 50px;
+      padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+      margin-bottom: 8rem;
+      /* margin-left: 30rem;
+    margin-top: 5rem; */
+      input {
+        /* margin-left: 0.5rem; */
+        color: inherit;
+        padding: 0.25rem;
+        border: none;
+        font-size: 1.25rem;
+        &:active,
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    .icon-email {
+      width: 50px;
+      height: 30px;
+    }
+    #contact-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   // for Mobile screen
   @media screen and (max-width: 500px) {
@@ -393,6 +425,123 @@ const SECTION = styled.section`
     }
     .div-2 {
       display: none;
+    }
+    .email-box {
+      border: 3px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: min(25rem, 100%);
+      margin-inline: auto;
+      /* height: 45px; */
+      border-radius: 50px;
+      padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+      margin-bottom: 8rem;
+      /* margin-left: 30rem;
+    margin-top: 5rem; */
+      input {
+        /* margin-left: 0.5rem; */
+        color: inherit;
+        padding: 0.25rem;
+        border: none;
+        font-size: 1.25rem;
+        &:active,
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    .icon-email {
+      width: 50px;
+      height: 30px;
+    }
+    #contact-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // screen size 412
+
+  @media screen and (max-width: 412px) {
+    min-height: 50vh;
+    .div-1 {
+      display: flex;
+      gap: 3rem;
+    }
+    .div-2 {
+      display: none;
+    }
+    .email-box {
+      border: 3px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: min(25rem, 100%);
+      margin-inline: auto;
+      border-radius: 50px;
+      padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+      margin-bottom: 8rem;
+    }
+    .icon-email {
+      width: 50px;
+      height: 30px;
+    }
+    .email-box #contact-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto; /* Add this line to center it horizontally */
+      margin-right: auto; /* Add this line to center it horizontally */
+    }
+    .email-box input {
+      color: inherit;
+      padding: 0.25rem;
+      border: none;
+      width: 220px;
+      font-size: 1.25rem;
+      &:active,
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 382px) {
+    .email-box input {
+      color: inherit;
+      padding: 0.25rem;
+      border: none;
+      width: 225px;
+      font-size: 1.25rem;
+      &:active,
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .email-box input {
+      color: inherit;
+      padding: 0.25rem;
+      border: none;
+      width: 170px;
+      font-size: 1.25rem;
+      &:active,
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+    .div-1 {
+      display: flex;
+      gap: 1.5rem;
     }
   }
 `;

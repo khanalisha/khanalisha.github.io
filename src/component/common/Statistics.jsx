@@ -125,4 +125,26 @@ const SECTION = styled.div`
       align-items: center;
     }
   }
+
+  // for Mobile screen
+  @media screen and (max-width: 500px) {
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      color: #373636;
+    }
+    .Calender {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+      width: auto;
+    }
+
+    a img {
+      width: 250px;
+    }
+  }
 `;

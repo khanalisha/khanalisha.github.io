@@ -12,7 +12,6 @@
   --fs-3: calc(1.313rem + 1vw);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --shadow-1: 10px 10px 40px var(--card-shadow);
- 
 
   --h1: 3.5rem;
   --h2: 2.5rem;
@@ -129,11 +128,10 @@ p {
   h1 {
     margin-bottom: 1rem;
   }
-  
+
   h2 {
     margin-bottom: 1rem;
   }
-  
 }
 
 /* Mobile Screen */
