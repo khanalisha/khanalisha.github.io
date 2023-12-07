@@ -77,37 +77,37 @@ export const Skill = () => {
           ) : (
             <div className="all-skill">
               <div className="skills-card">
-                <img src="" alt="" className="skills-card-img" />
+                <img src="vsCode.png" alt="" className="skills-card-img" />
                 <h4 className="skills-card-name"></h4>
               </div>
               <div className="skills-card">
-                <img src="" alt="" className="skills-card-img" />
+                <img src="npm.png" alt="" className="skills-card-img" />
                 <h4 className="skills-card-name"></h4>
               </div>
               <div className="skills-card">
-                <img src="" alt="" className="skills-card-img" />
+                <img src="figma.jpg" alt="" className="skills-card-img" />
                 <h4 className="skills-card-name"></h4>
               </div>
               <div className="skills-card">
+                <img src="commandLine.png" alt="" className="skills-card-img" />
+                <h4 className="skills-card-name"></h4>
+              </div>
+              {/* <div className="skills-card">
                 <img src="" alt="" className="skills-card-img" />
+                <h4 className="skills-card-name"></h4>
+              </div> */}
+              <div className="skills-card">
+                <img src="slack.jpg" alt="" className="skills-card-img" />
                 <h4 className="skills-card-name"></h4>
               </div>
               <div className="skills-card">
-                <img src="" alt="" className="skills-card-img" />
+                <img src="git.png" alt="" className="skills-card-img" />
                 <h4 className="skills-card-name"></h4>
               </div>
-              <div className="skills-card">
+              {/* <div className="skills-card">
                 <img src="" alt="" className="skills-card-img" />
                 <h4 className="skills-card-name"></h4>
-              </div>
-              <div className="skills-card">
-                <img src="" alt="" className="skills-card-img" />
-                <h4 className="skills-card-name"></h4>
-              </div>
-              <div className="skills-card">
-                <img src="" alt="" className="skills-card-img" />
-                <h4 className="skills-card-name"></h4>
-              </div>
+              </div> */}
             </div>
           )}
         </Container>
