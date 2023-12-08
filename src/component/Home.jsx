@@ -62,9 +62,9 @@ export const Home = () => {
               >
                 <a
                   className="nav-link resume"
-                  href="/public/Alisha-Khan-Resume.pdf"
+                  href="/Alisha-Khan-Resume.pdf"
                   id="resume-link-2"
-                  download
+                  download="Alisha-Khan-Resume.pdf"
                 >
                   Resume
                 </a>
