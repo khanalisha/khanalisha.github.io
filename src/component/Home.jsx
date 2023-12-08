@@ -233,7 +233,7 @@ const SECTION = styled.section`
     .btn-div {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
   }
 
@@ -266,7 +266,7 @@ const SECTION = styled.section`
     .btn-div {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
   }
 
@@ -296,7 +296,7 @@ const SECTION = styled.section`
     .btn-div {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
   }
 `;
