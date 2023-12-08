@@ -182,9 +182,9 @@ export const NavBar = () => {
           <button id="resume-button-1" className="btn" onClick={openHandler}>
             <a
               className="nav-link resume"
-              href="/public/Alisha-Khan-Resume.pdf"
+              href="/Alisha-Khan-Resume.pdf"
               id="resume-link-1"
-              download
+              download="Alisha-Khan-Resume.pdf"
               onClick={toggleMenu}
             >
               Resume
@@ -232,9 +232,9 @@ function Navigation() {
       <button id="resume-button-1" className="btn" onClick={openHandler}>
         <a
           className="nav-link resume"
-          href="/public/Alisha-Khan-Resume.pdf"
+          href="/Alisha-Khan-Resume.pdf"
           id="resume-link-1"
-          download
+          download="Alisha-Khan-Resume.pdf"
         >
           Resume
         </a>
