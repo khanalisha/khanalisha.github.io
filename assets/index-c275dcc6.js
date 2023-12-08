@@ -1267,7 +1267,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .btn-div {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
   }
 
@@ -1300,7 +1300,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .btn-div {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
   }
 
@@ -1330,7 +1330,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .btn-div {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
   }
 `,QA=()=>S.jsxs(XA,{children:[S.jsx("div",{}),S.jsx("div",{}),S.jsx("hr",{})]}),XA=on.div`
