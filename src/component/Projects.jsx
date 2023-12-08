@@ -22,7 +22,7 @@ export const Projects = () => {
           </div>
           {/* <!---project1--> */}
 
-          <div className="project-card">
+          <div className="project-card project1">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -150,7 +150,7 @@ export const Projects = () => {
 
           {/* <!---project3--> */}
 
-          <div className="project-card">
+          <div className="project-card project3">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -347,6 +347,11 @@ const SECTION = styled.section`
       /* box-shadow: var(--shadow-1); */
       background-color: #fff !important;
     }
+
+    .project1,
+    .project3 {
+      flex-direction: column-reverse;
+    }
     .project-img {
       width: 400px;
       height: 250px;
@@ -354,6 +359,23 @@ const SECTION = styled.section`
   }
   /* Medium Screen */
   @media screen and (max-width: 750px) {
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* box-shadow: var(--shadow-1); */
+      background-color: #fff !important;
+    }
+
+    .project1,
+    .project3 {
+      flex-direction: column-reverse;
+    }
+    .project-img {
+      width: 300px;
+      height: 150px;
+    }
   }
   /* Mobile Screens */
   @media screen and (max-width: 500px) {
@@ -364,6 +386,11 @@ const SECTION = styled.section`
       align-items: center;
       /* box-shadow: var(--shadow-1); */
       background-color: #fff !important;
+    }
+
+    .project1,
+    .project3 {
+      flex-direction: column-reverse;
     }
     .project-img {
       width: 300px;
