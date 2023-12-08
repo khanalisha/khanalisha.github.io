@@ -3,6 +3,12 @@ import styled from "styled-components";
 import { Reveal } from "./common/Reveal";
 
 export const Home = () => {
+  function openHandler() {
+    window.open(
+      "https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view?usp=sharing",
+      "_blank"
+    );
+  }
   return (
     <Reveal
       hidden={{
@@ -49,10 +55,14 @@ export const Home = () => {
                   Stay Connected
                 </a>
               </button>
-              <button id="resume-button-2" className="btn">
+              <button
+                id="resume-button-2"
+                className="btn"
+                onClick={openHandler}
+              >
                 <a
                   className="nav-link resume"
-                  href="Resume.pdf"
+                  href="/public/Alisha-Khan-Resume.pdf"
                   id="resume-link-2"
                   download
                 >

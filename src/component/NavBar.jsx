@@ -122,6 +122,14 @@ export const NavBar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [isSmallScreen]);
+
+  function openHandler() {
+    window.open(
+      "https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view?usp=sharing",
+      "_blank"
+    );
+  }
+
   return (
     <NAVBAR id="nav-menu">
       {isSmallScreen && (
@@ -171,15 +179,17 @@ export const NavBar = () => {
               Contact
             </a>
           </div>
-          <a
-            className="nav-link resume"
-            href="Resume.pdf"
-            id="resume-link-1"
-            download
-            onClick={toggleMenu}
-          >
-            Resume
-          </a>
+          <button id="resume-button-1" className="btn" onClick={openHandler}>
+            <a
+              className="nav-link resume"
+              href="/public/Alisha-Khan-Resume.pdf"
+              id="resume-link-1"
+              download
+              onClick={toggleMenu}
+            >
+              Resume
+            </a>
+          </button>
         </SIDEBAR>
       ) : (
         <Navigation />
@@ -189,6 +199,12 @@ export const NavBar = () => {
 };
 
 function Navigation() {
+  function openHandler() {
+    window.open(
+      "https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view?usp=sharing",
+      "_blank"
+    );
+  }
   return (
     <>
       <h2>Alisha Khan</h2>
@@ -213,10 +229,10 @@ function Navigation() {
           Contact
         </a>
       </div>
-      <button id="resume-button-1" className="btn">
+      <button id="resume-button-1" className="btn" onClick={openHandler}>
         <a
           className="nav-link resume"
-          href="Resume.pdf"
+          href="/public/Alisha-Khan-Resume.pdf"
           id="resume-link-1"
           download
         >
