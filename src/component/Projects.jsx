@@ -159,23 +159,24 @@ export const Projects = () => {
               visible={{ opacity: 1, y: 0 }}
             >
               <div className="main-description">
-                <span className="project-title span-1">SwiftPay</span>
-                <span className="span-2">Online finance app</span>
+                <span className="project-title span-1">Hello Fresh</span>
+                <span className="span-2"></span>
 
                 <h1>
                   {" "}
-                  An online financial web application for buying subscriptions
+                  An online service offers personalized meal plans with
+                  pre-portioned ingredients delivered to your doorstep.
                 </h1>
                 <p className="project-description">
-                  Swiftpay is a dynamic and user-friendly finance website that
-                  revolutionizes the way you manage your financial transactions.
-                  With Swiftpay, you can seamlessly handle subscriptions, send
-                  and receive money from your contacts, and witness real-time
-                  transaction updates right on your user interface.
+                  A Home Chef website clone is a platform inspired by the
+                  popular Home Chef service, offering users the ability to
+                  access a wide range of curated recipes, select personalized
+                  meal plans, and conveniently receive pre-portioned ingredients
+                  delivered to their doorstep.
                 </p>
                 <div className="p-view">
                   <a
-                    href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                    href="https://github.com/khanalisha/Home_Chef"
                     target="_blank"
                     className="project-github-link"
                   >
@@ -186,7 +187,7 @@ export const Projects = () => {
                     />
                   </a>
                   <a
-                    href="https://warlike-current-5989-gamma.vercel.app/"
+                    href="https://home-chef-neon.vercel.app/"
                     target="_blank"
                     class="project-deployed-link"
                   >
@@ -207,14 +208,14 @@ export const Projects = () => {
               visible={{ opacity: 1, y: 0 }}
             >
               <div className="img-div">
-                <img src="project1.png" alt="" className="project-img" />
+                <img src="pro3.png" alt="" className="project-img" />
               </div>
             </Reveal>
           </div>
 
           {/* <!---project4--> */}
 
-          <div className="project-card">
+          {/* <div className="project-card">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -273,7 +274,7 @@ export const Projects = () => {
                 </div>
               </div>
             </Reveal>
-          </div>
+          </div> */}
         </Container>
       </SECTION>
     </Reveal>

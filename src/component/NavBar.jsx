@@ -122,10 +122,10 @@ export const NavBar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [isSmallScreen]);
-
+  //https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view?usp=sharing",
+      "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
       "_blank"
     );
   }
@@ -135,6 +135,7 @@ export const NavBar = () => {
       {isSmallScreen && (
         <div className="mobile-nav">
           <h2>Alisha Khan</h2>
+          {/* <img src="myNamelogo.png" alt="" /> */}
           <HamburgerIcon onClick={toggleMenu}>
             <FontAwesomeIcon icon={faBars} className="icon" />
           </HamburgerIcon>
@@ -146,6 +147,7 @@ export const NavBar = () => {
             <FontAwesomeIcon icon={faXmark} className="icon" />
           </div>
           <h2>Alisha Khan</h2>
+          {/* <img src="myNamelogo.png" alt="" /> */}
           <div>
             <a className="nav-link home" href="#home" onClick={toggleMenu}>
               Home
@@ -182,9 +184,9 @@ export const NavBar = () => {
           <button id="resume-button-1" className="btn" onClick={openHandler}>
             <a
               className="nav-link resume"
-              href="/Alisha-Khan-Resume.pdf"
+              href="/Alisha-Khan-Resume..pdf"
               id="resume-link-1"
-              download="Alisha-Khan-Resume.pdf"
+              download="Alisha-Khan-Resume..pdf"
               onClick={toggleMenu}
             >
               Resume
@@ -201,13 +203,14 @@ export const NavBar = () => {
 function Navigation() {
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view?usp=sharing",
+      "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
       "_blank"
     );
   }
   return (
     <>
       <h2>Alisha Khan</h2>
+      {/* <img src="myNamelogo.png" alt="" /> */}
       <div>
         <a className="nav-link home" href="#home">
           Home
@@ -232,9 +235,9 @@ function Navigation() {
       <button id="resume-button-1" className="btn" onClick={openHandler}>
         <a
           className="nav-link resume"
-          href="/Alisha-Khan-Resume.pdf"
+          href="/Alisha-khan-Resume..pdf"
           id="resume-link-1"
-          download="Alisha-Khan-Resume.pdf"
+          download="Alisha-Khan-Resume..pdf"
         >
           Resume
         </a>
@@ -341,6 +344,11 @@ const NAVBAR = styled.nav`
     &:hover {
       color: var(--primary);
     }
+  }
+
+  img {
+    width: 200px;
+    padding-top: 0%.5;
   }
   a {
     text-decoration: none;

@@ -297,6 +297,8 @@ const SECTION = styled.section`
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 1rem;
+     
     }
+    
   }
 `;
