@@ -125,7 +125,8 @@ export const NavBar = () => {
   //https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
+      "https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view",
+      // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
       "_blank"
     );
   }
@@ -184,7 +185,7 @@ export const NavBar = () => {
           <button id="resume-button-1" className="btn" onClick={openHandler}>
             <a
               className="nav-link resume"
-              href="/Alisha-Khan-Resume..pdf"
+              href="/Alisha-khan-Resume..pdf"
               id="resume-link-1"
               download="Alisha-Khan-Resume..pdf"
               onClick={toggleMenu}
@@ -203,7 +204,8 @@ export const NavBar = () => {
 function Navigation() {
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
+      // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
+      "https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view",
       "_blank"
     );
   }

@@ -5,7 +5,7 @@ import { Reveal } from "./common/Reveal";
 export const Home = () => {
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view?usp=sharing",
+      "https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view",
       "_blank"
     );
   }
@@ -62,7 +62,7 @@ export const Home = () => {
               >
                 <a
                   className="nav-link resume"
-                  href="/Alisha-Khan-Resume.pdf"
+                  href="/Alisha-Khan-Resume..pdf"
                   id="resume-link-2"
                   download="Alisha-Khan-Resume.pdf"
                 >
