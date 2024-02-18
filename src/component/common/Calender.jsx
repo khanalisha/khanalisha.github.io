@@ -41,7 +41,7 @@ export const Calender = () => {
         renderBlock={handleRender}
         theme={{
           light: ["#F7E5D2", "#EBC296", "#DFA464", "#D7862F", "#B46D20"],
-          dark: [ "#fc7e44","#dd8760", "#e69e7c", "#eda787", "#69DB7C"],
+          dark: [ "#de6a34","#dd8760", "#e69e7c", "#eda787", "#9bf2a9"],
         }}
       />
     </SECTION>

@@ -90,6 +90,7 @@ const SECTION = styled.div`
     align-items: center;
     padding-bottom: 2rem;
   }
+
   .p1 {
     line-height: 2em;
   }

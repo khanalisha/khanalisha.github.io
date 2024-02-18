@@ -215,7 +215,7 @@ export const Projects = () => {
 
           {/* <!---project4--> */}
 
-          {/* <div className="project-card">
+          <div className="project-card">
             <Reveal
               hidden={{
                 opacity: 0,
@@ -224,7 +224,7 @@ export const Projects = () => {
               visible={{ opacity: 1, y: 0 }}
             >
               <div className="img-div">
-                <img src="project2.png" alt="" className="project-img" />
+                <img src="project4.png" alt="" className="project-img4 project-img" />
               </div>
             </Reveal>
             <Reveal
@@ -235,22 +235,20 @@ export const Projects = () => {
               visible={{ opacity: 1, y: 0 }}
             >
               <div className="main-description">
-                <span className="project-title span-1">SwiftPay</span>
-                <span className="span-2">Online finance app</span>
+                <span className="project-title span-1">Interview</span>
+                <span className="span-2">platform</span>
 
-                <h1>
-                  An online financial web application for buying subscriptions
-                </h1>
+                <h1>Interview Practice Hub</h1>
                 <p className="project-description">
-                  Swiftpay is a dynamic and user-friendly finance website that
-                  revolutionizes the way you manage your financial transactions.
-                  With Swiftpay, you can seamlessly handle subscriptions, send
-                  and receive money from your contacts, and witness real-time
-                  transaction updates right on your user interface.
+                  Interview Practice Hub for Java, JavaScript, Node.js, and MERN
+                  Stack Welcome to the Interview Practice Hub! 🚀 This platform
+                  is your go-to resource for honing your skills and acing
+                  technical interviews in Java, JavaScript, Node.js, and the
+                  MERN stack (MongoDB, Express.js, React.js, Node.js)
                 </p>
                 <div className="p-view">
                   <a
-                    href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                    href="https://github.com/khanalisha/Interview-Platform/tree/main"
                     target="_blank"
                     className="project-github-link"
                   >
@@ -261,7 +259,7 @@ export const Projects = () => {
                     />
                   </a>
                   <a
-                    href="https://warlike-current-5989-gamma.vercel.app/"
+                    href="https://tangerine-cranachan-6e5f4e.netlify.app/"
                     target="_blank"
                     class="project-deployed-link"
                   >
@@ -274,7 +272,7 @@ export const Projects = () => {
                 </div>
               </div>
             </Reveal>
-          </div> */}
+          </div>
         </Container>
       </SECTION>
     </Reveal>
@@ -301,6 +299,10 @@ const SECTION = styled.section`
   }
   .project-img {
     width: 350px;
+    height: 200px;
+  }
+  .project-img4 {
+    width: 420px;
     height: 200px;
   }
 

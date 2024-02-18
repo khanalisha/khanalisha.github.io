@@ -115,6 +115,9 @@ const SECTION = styled.section`
   }
 
   .image-container {
+    box-shadow: 0px 1px 15px  2px var(--primary);;
+    opacity: 1px;
+    
     width: 22.5rem;
     height: 22.5rem;
     border-radius: 50%;
@@ -123,10 +126,13 @@ const SECTION = styled.section`
     top: 50%;
 
     img {
+     
       height: 100%;
       width: 110%;
       /* margin-left: 0.5rem; */
       object-fit: cover;
+     
+     
     }
   }
   .second-div {
