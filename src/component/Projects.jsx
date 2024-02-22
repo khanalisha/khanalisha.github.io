@@ -248,7 +248,7 @@ export const Projects = () => {
                 </p>
                 <div className="p-view">
                   <a
-                    href="https://github.com/khanalisha/Interview-Platform/tree/main"
+                    href="https://github.com/khanalisha/Interview-Platform"
                     target="_blank"
                     className="project-github-link"
                   >
@@ -259,7 +259,7 @@ export const Projects = () => {
                     />
                   </a>
                   <a
-                    href="https://tangerine-cranachan-6e5f4e.netlify.app/"
+                    href="https://65cc833d0cc2ec8ac4d3cf80--delicate-chimera-0f4997.netlify.app/"
                     target="_blank"
                     class="project-deployed-link"
                   >
