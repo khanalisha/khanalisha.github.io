@@ -125,7 +125,7 @@ export const NavBar = () => {
   //https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view",
+      "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
       // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
       "_blank"
     );

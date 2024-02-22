@@ -3,11 +3,9 @@ import styled from "styled-components";
 import { Reveal } from "./common/Reveal";
 
 export const Home = () => {
+  //https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view
   function openHandler() {
-    window.open(
-      "https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view",
-      "_blank"
-    );
+    window.open("https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view", "_blank");
   }
   return (
     <Reveal
@@ -115,9 +113,9 @@ const SECTION = styled.section`
   }
 
   .image-container {
-    box-shadow: 0px 1px 15px  2px var(--primary);;
+    box-shadow: 0px 1px 15px 2px var(--primary);
     opacity: 1px;
-    
+
     width: 22.5rem;
     height: 22.5rem;
     border-radius: 50%;
@@ -126,13 +124,10 @@ const SECTION = styled.section`
     top: 50%;
 
     img {
-     
       height: 100%;
       width: 110%;
       /* margin-left: 0.5rem; */
       object-fit: cover;
-     
-     
     }
   }
   .second-div {
@@ -303,8 +298,6 @@ const SECTION = styled.section`
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 1rem;
-     
     }
-    
   }
 `;
