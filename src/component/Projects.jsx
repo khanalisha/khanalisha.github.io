@@ -224,7 +224,11 @@ export const Projects = () => {
               visible={{ opacity: 1, y: 0 }}
             >
               <div className="img-div">
-                <img src="project4.png" alt="" className="project-img4 project-img" />
+                <img
+                  src="project4.png"
+                  alt=""
+                  className="project-img4 project-img"
+                />
               </div>
             </Reveal>
             <Reveal
