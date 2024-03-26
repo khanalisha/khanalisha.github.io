@@ -205,7 +205,7 @@ function Navigation() {
   function openHandler() {
     window.open(
       // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
-      "https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view",
+      "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing",
       "_blank"
     );
   }
