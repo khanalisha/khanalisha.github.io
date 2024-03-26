@@ -5,7 +5,10 @@ import { Reveal } from "./common/Reveal";
 export const Home = () => {
   //https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view
   function openHandler() {
-    window.open("https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing",
+      "_blank"
+    );
   }
   return (
     <Reveal
