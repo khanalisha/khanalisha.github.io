@@ -135,6 +135,7 @@ const SECTION = styled.div`
     justify-content: space-between;
     padding: 1rem;
   }
+
   .div-1 {
     display: flex;
     gap: 1rem;
@@ -150,136 +151,127 @@ const SECTION = styled.div`
     width: 25px;
     height: 25px;
   }
-  @media screen and (max-width:642px) {
+  @media screen and (max-width: 642px) {
     .contact-body {
-    padding-top: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
+      padding-top: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .p-1 {
-    margin-right: 2rem;
-    padding-bottom: 1rem;
-    font-weight: 600;
-    font-size: medium;
-    line-height: 1px;
-  }
-
+      margin-right: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      font-size: medium;
+      line-height: 1px;
+    }
 
     .social {
-    border: 3px solid var(--primary);
-    border-radius: 50% 50% 50% 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
+      border: 3px solid var(--primary);
+      border-radius: 50% 50% 50% 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+    /*  */
+    .Git {
+      width: 18px;
+      height: 18px;
+      color: var(--primary);
+    }
+
+    .phone {
+      width: 15px;
+      height: 15px;
+
+      color: var(--primary);
+    }
+
+    .all-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .div-1 {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .linkdin {
+      width: 15px;
+      height: 15px;
+      color: var(--primary);
+    }
+    .facebook {
+      color: var(--primary);
+      width: 15px;
+      height: 15px;
+    }
   }
 
-  .Git {
-    width: 18px;
-    height: 18px;
-    color: var(--primary);
-  }
-
-  .phone {
-    width: 15px;
-    height: 15px;
-
-    color: var(--primary);
-  }
-
-  .all-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .div-1 {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .linkdin {
-    width: 15px;
-    height: 15px;
-    color: var(--primary);
-  }
-  .facebook {
-    color: var(--primary);
-    width: 15px;
-    height: 15px;
-  }
-
-  
-  }
-  
-   @media screen and (max-width: 320px) {
-  
-  .contact-body {
-    padding-top: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
+  @media screen and (max-width: 320px) {
+    .contact-body {
+      padding-top: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .p-1 {
-    margin-right: 2rem;
-    padding-bottom: 1rem;
-    font-weight: 600;
-    font-size: medium;
-    line-height: 1px;
-  }
-
+      margin-right: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      font-size: medium;
+      line-height: 1px;
+    }
 
     .social {
-    border: 3px solid var(--primary);
-    border-radius: 50% 50% 50% 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-  }
+      border: 3px solid var(--primary);
+      border-radius: 50% 50% 50% 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
 
-  .Git {
-    width: 18px;
-    height: 18px;
-    color: var(--primary);
-  }
+    .Git {
+      width: 18px;
+      height: 18px;
+      color: var(--primary);
+    }
 
-  .phone {
-    width: 15px;
-    height: 15px;
+    .phone {
+      width: 15px;
+      height: 15px;
 
-    color: var(--primary);
-  }
+      color: var(--primary);
+    }
 
-  .all-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .div-1 {
-    display: flex;
-    gap: 1rem;
-  }
+    .all-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .div-1 {
+      display: flex;
+      gap: 1rem;
+    }
 
-  .linkdin {
-    width: 15px;
-    height: 15px;
-    color: var(--primary);
+    .linkdin {
+      width: 15px;
+      height: 15px;
+      color: var(--primary);
+    }
+    .facebook {
+      color: var(--primary);
+      width: 15px;
+      height: 15px;
+    }
   }
-  .facebook {
-    color: var(--primary);
-    width: 15px;
-    height: 15px;
-  }
-
-  
-   }
 `;

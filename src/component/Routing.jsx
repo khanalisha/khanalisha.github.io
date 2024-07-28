@@ -11,7 +11,7 @@ export default function Routing() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/project" element={<Projects/>} />
+      <Route path="/project" element={<Projects />} />
       <Route path="/skill" element={<Skill />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>

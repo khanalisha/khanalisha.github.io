@@ -12,8 +12,6 @@
 // } from "@fortawesome/free-brands-svg-icons";
 // import { faEnvelope, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
-
-
 // export const Contact = () => {
 //   return (
 //     <SECTION id="contact">
