@@ -59,7 +59,7 @@ export const Projects = () => {
                   <a
                     href="https://warlike-current-5989-gamma.vercel.app/"
                     target="_blank"
-                    class="project-deployed-link"
+                    className="project-deployed-link"
                   >
                     Check it out
                     <FontAwesomeIcon
@@ -135,7 +135,7 @@ export const Projects = () => {
                   <a
                     href="https://lively-marigold-c98b3e.netlify.app/"
                     target="_blank"
-                    class="project-deployed-link"
+                    className="project-deployed-link"
                   >
                     Check it out
                     <FontAwesomeIcon
@@ -189,7 +189,7 @@ export const Projects = () => {
                   <a
                     href="https://home-chef-neon.vercel.app/"
                     target="_blank"
-                    class="project-deployed-link"
+                    className="project-deployed-link"
                   >
                     Check it out
                     <FontAwesomeIcon
@@ -265,7 +265,7 @@ export const Projects = () => {
                   <a
                     href="https://65cc833d0cc2ec8ac4d3cf80--delicate-chimera-0f4997.netlify.app/"
                     target="_blank"
-                    class="project-deployed-link"
+                    className="project-deployed-link"
                   >
                     Check it out
                     <FontAwesomeIcon
