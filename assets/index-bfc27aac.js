@@ -1479,6 +1479,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     justify-content: space-between;
     padding: 1rem;
   }
+
   .div-1 {
     display: flex;
     gap: 1rem;
@@ -1494,139 +1495,130 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: 25px;
     height: 25px;
   }
-  @media screen and (max-width:642px) {
+  @media screen and (max-width: 642px) {
     .contact-body {
-    padding-top: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
+      padding-top: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .p-1 {
-    margin-right: 2rem;
-    padding-bottom: 1rem;
-    font-weight: 600;
-    font-size: medium;
-    line-height: 1px;
-  }
-
+      margin-right: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      font-size: medium;
+      line-height: 1px;
+    }
 
     .social {
-    border: 3px solid var(--primary);
-    border-radius: 50% 50% 50% 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
+      border: 3px solid var(--primary);
+      border-radius: 50% 50% 50% 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+    /*  */
+    .Git {
+      width: 18px;
+      height: 18px;
+      color: var(--primary);
+    }
+
+    .phone {
+      width: 15px;
+      height: 15px;
+
+      color: var(--primary);
+    }
+
+    .all-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .div-1 {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .linkdin {
+      width: 15px;
+      height: 15px;
+      color: var(--primary);
+    }
+    .facebook {
+      color: var(--primary);
+      width: 15px;
+      height: 15px;
+    }
   }
 
-  .Git {
-    width: 18px;
-    height: 18px;
-    color: var(--primary);
-  }
-
-  .phone {
-    width: 15px;
-    height: 15px;
-
-    color: var(--primary);
-  }
-
-  .all-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .div-1 {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .linkdin {
-    width: 15px;
-    height: 15px;
-    color: var(--primary);
-  }
-  .facebook {
-    color: var(--primary);
-    width: 15px;
-    height: 15px;
-  }
-
-  
-  }
-  
-   @media screen and (max-width: 320px) {
-  
-  .contact-body {
-    padding-top: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
+  @media screen and (max-width: 320px) {
+    .contact-body {
+      padding-top: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .p-1 {
-    margin-right: 2rem;
-    padding-bottom: 1rem;
-    font-weight: 600;
-    font-size: medium;
-    line-height: 1px;
-  }
-
+      margin-right: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      font-size: medium;
+      line-height: 1px;
+    }
 
     .social {
-    border: 3px solid var(--primary);
-    border-radius: 50% 50% 50% 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-  }
+      border: 3px solid var(--primary);
+      border-radius: 50% 50% 50% 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
 
-  .Git {
-    width: 18px;
-    height: 18px;
-    color: var(--primary);
-  }
+    .Git {
+      width: 18px;
+      height: 18px;
+      color: var(--primary);
+    }
 
-  .phone {
-    width: 15px;
-    height: 15px;
+    .phone {
+      width: 15px;
+      height: 15px;
 
-    color: var(--primary);
-  }
+      color: var(--primary);
+    }
 
-  .all-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .div-1 {
-    display: flex;
-    gap: 1rem;
-  }
+    .all-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .div-1 {
+      display: flex;
+      gap: 1rem;
+    }
 
-  .linkdin {
-    width: 15px;
-    height: 15px;
-    color: var(--primary);
+    .linkdin {
+      width: 15px;
+      height: 15px;
+      color: var(--primary);
+    }
+    .facebook {
+      color: var(--primary);
+      width: 15px;
+      height: 15px;
+    }
   }
-  .facebook {
-    color: var(--primary);
-    width: 15px;
-    height: 15px;
-  }
-
-  
-   }
-`,i8=()=>S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsx(o8,{id:"projects",children:S.jsxs(Is,{className:"main",children:[S.jsx("div",{className:"header",children:S.jsx("h2",{children:"Some of my work"})}),S.jsxs("div",{className:"project-card project1",children:[S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"SwiftPay"}),S.jsx("span",{className:"span-2",children:"Online finance app"}),S.jsx("h1",{children:"An online financial web application for buying subscriptions"}),S.jsx("p",{className:"project-description",children:"Swiftpay is a dynamic and user-friendly finance website that revolutionizes the way you manage your financial transactions. With Swiftpay, you can seamlessly handle subscriptions, send and receive money from your contacts, and witness real-time transaction updates right on your user interface."}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/warlike-current-5989",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://warlike-current-5989-gamma.vercel.app/",target:"_blank",class:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})}),S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"project1.png",alt:"",className:"project-img"})})})]}),S.jsxs("div",{className:"project-card",children:[S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"project2.png",alt:"",className:"project-img"})})}),S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"Travellish"}),S.jsx("span",{className:"span-2",children:"Online travel & hotel booking website"}),S.jsx("h1",{children:"Travellish is an online travel website that offers a wide."}),S.jsx("p",{className:"project-description",children:"Welcome to Travellish, your ultimate travel companion for exploring the world. Travellish is an online travel website that offers a wide range of travel-related services to make your travel experience hassle-free, fun and memorable.It is travel & hotel booking website to book flight and hotel."}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/huge-coast-1878",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://lively-marigold-c98b3e.netlify.app/",target:"_blank",class:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})})]}),S.jsxs("div",{className:"project-card project3",children:[S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"Hello Fresh"}),S.jsx("span",{className:"span-2"}),S.jsxs("h1",{children:[" ","An online service offers personalized meal plans with pre-portioned ingredients delivered to your doorstep."]}),S.jsx("p",{className:"project-description",children:"A Home Chef website clone is a platform inspired by the popular Home Chef service, offering users the ability to access a wide range of curated recipes, select personalized meal plans, and conveniently receive pre-portioned ingredients delivered to their doorstep."}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/Home_Chef",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://home-chef-neon.vercel.app/",target:"_blank",class:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})}),S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"pro3.png",alt:"",className:"project-img"})})})]}),S.jsxs("div",{className:"project-card",children:[S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"project4.png",alt:"",className:"project-img4 project-img"})})}),S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"Interview"}),S.jsx("span",{className:"span-2",children:"platform"}),S.jsx("h1",{children:"Interview Practice Hub"}),S.jsx("p",{className:"project-description",children:"Interview Practice Hub for Java, JavaScript, Node.js, and MERN Stack Welcome to the Interview Practice Hub! 🚀 This platform is your go-to resource for honing your skills and acing technical interviews in Java, JavaScript, Node.js, and the MERN stack (MongoDB, Express.js, React.js, Node.js)"}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/Interview-Platform",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://65cc833d0cc2ec8ac4d3cf80--delicate-chimera-0f4997.netlify.app/",target:"_blank",class:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})})]})]})})}),o8=on.section`
+`,i8=()=>S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsx(o8,{id:"projects",children:S.jsxs(Is,{className:"main",children:[S.jsx("div",{className:"header",children:S.jsx("h2",{children:"Some of my work"})}),S.jsxs("div",{className:"project-card project1",children:[S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"SwiftPay"}),S.jsx("span",{className:"span-2",children:"Online finance app"}),S.jsx("h1",{children:"An online financial web application for buying subscriptions"}),S.jsx("p",{className:"project-description",children:"Swiftpay is a dynamic and user-friendly finance website that revolutionizes the way you manage your financial transactions. With Swiftpay, you can seamlessly handle subscriptions, send and receive money from your contacts, and witness real-time transaction updates right on your user interface."}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/warlike-current-5989",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://warlike-current-5989-gamma.vercel.app/",target:"_blank",className:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})}),S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"project1.png",alt:"",className:"project-img"})})})]}),S.jsxs("div",{className:"project-card",children:[S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"project2.png",alt:"",className:"project-img"})})}),S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"Travellish"}),S.jsx("span",{className:"span-2",children:"Online travel & hotel booking website"}),S.jsx("h1",{children:"Travellish is an online travel website that offers a wide."}),S.jsx("p",{className:"project-description",children:"Welcome to Travellish, your ultimate travel companion for exploring the world. Travellish is an online travel website that offers a wide range of travel-related services to make your travel experience hassle-free, fun and memorable.It is travel & hotel booking website to book flight and hotel."}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/huge-coast-1878",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://lively-marigold-c98b3e.netlify.app/",target:"_blank",className:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})})]}),S.jsxs("div",{className:"project-card project3",children:[S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"Hello Fresh"}),S.jsx("span",{className:"span-2"}),S.jsxs("h1",{children:[" ","An online service offers personalized meal plans with pre-portioned ingredients delivered to your doorstep."]}),S.jsx("p",{className:"project-description",children:"A Home Chef website clone is a platform inspired by the popular Home Chef service, offering users the ability to access a wide range of curated recipes, select personalized meal plans, and conveniently receive pre-portioned ingredients delivered to their doorstep."}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/Home_Chef",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://home-chef-neon.vercel.app/",target:"_blank",className:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})}),S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"pro3.png",alt:"",className:"project-img"})})})]}),S.jsxs("div",{className:"project-card",children:[S.jsx(Kt,{hidden:{opacity:0,y:-150},visible:{opacity:1,y:0},children:S.jsx("div",{className:"img-div",children:S.jsx("img",{src:"project4.png",alt:"",className:"project-img4 project-img"})})}),S.jsx(Kt,{hidden:{opacity:0,y:150},visible:{opacity:1,y:0},children:S.jsxs("div",{className:"main-description",children:[S.jsx("span",{className:"project-title span-1",children:"Interview"}),S.jsx("span",{className:"span-2",children:"platform"}),S.jsx("h1",{children:"Interview Practice Hub"}),S.jsx("p",{className:"project-description",children:"Interview Practice Hub for Java, JavaScript, Node.js, and MERN Stack Welcome to the Interview Practice Hub! 🚀 This platform is your go-to resource for honing your skills and acing technical interviews in Java, JavaScript, Node.js, and the MERN stack (MongoDB, Express.js, React.js, Node.js)"}),S.jsxs("div",{className:"p-view",children:[S.jsx("a",{href:"https://github.com/khanalisha/Interview-Platform",target:"_blank",className:"project-github-link",children:S.jsx(yt,{icon:Io,className:"icon",style:{color:"var(--primary)"}})}),S.jsxs("a",{href:"https://65cc833d0cc2ec8ac4d3cf80--delicate-chimera-0f4997.netlify.app/",target:"_blank",className:"project-deployed-link",children:["Check it out",S.jsx(yt,{icon:Ml,style:{marginLeft:"10px"}})]})]})]})})]})]})})}),o8=on.section`
   min-height: 80vh;
   padding-block: 8rem 5.5rem;
   h2 {
