@@ -6,7 +6,7 @@ export const Home = () => {
   //https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing",
+      "https://drive.google.com/file/d/1SuS5dVJvEqOdHOIxZRNlk7FeFW9x3E3o/view?usp=sharing",
       "_blank"
     );
   }

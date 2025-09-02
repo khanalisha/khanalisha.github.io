@@ -125,8 +125,9 @@ export const NavBar = () => {
   //https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
+      // "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
       // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
+      "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
       "_blank"
     );
   }
@@ -205,7 +206,8 @@ function Navigation() {
   function openHandler() {
     window.open(
       // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
-      "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing",
+      // "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing"
+      "https://drive.google.com/file/d/1SuS5dVJvEqOdHOIxZRNlk7FeFW9x3E3o/view?usp=sharing",
       "_blank"
     );
   }
