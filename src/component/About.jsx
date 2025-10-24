@@ -22,7 +22,7 @@ export const About = () => {
             <div className="about-content">
               <h2 id="user-detail-name">About me?</h2>
               <p>
-                Greetings! Alisha khan, a skilled Full stack developer with a
+                Greetings! Alisha Iqubal, a skilled Full stack developer with a
                 passion for creating efficient and user-friendly web
                 application. With the expertise in the both Frontend and Backend
                 technologies.
@@ -49,14 +49,14 @@ export const About = () => {
 
 const SECTION = styled.section`
   min-height: 80vh;
-  padding-block: 3rem;
+  padding-top: 8rem;
 
   .main-about-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding-block: 5rem;
+    padding-top: 8rem;
 
     .about-content {
       width: 50%;
@@ -76,7 +76,7 @@ const SECTION = styled.section`
   }
   @media screen and (max-width: 950px) {
     min-height: 60vh;
-    padding-block: 2rem;
+    padding-top: 2rem;
 
     .main-about-content {
       padding-block: 3rem;
@@ -90,6 +90,7 @@ const SECTION = styled.section`
   /* Medium Screen */
   @media screen and (max-width: 750px) {
     min-height: 50vh;
+
     .main-about-content {
       .about-image-container {
         img {

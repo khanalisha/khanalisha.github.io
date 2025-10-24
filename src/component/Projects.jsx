@@ -284,7 +284,7 @@ export const Projects = () => {
 };
 const SECTION = styled.section`
   min-height: 80vh;
-  padding-block: 8rem 5.5rem;
+  padding-top: 8rem;
   h2 {
     display: flex;
     justify-content: center;

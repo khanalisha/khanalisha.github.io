@@ -140,7 +140,7 @@
 
 //           <div className="div-2">
 //             <p className="copy-right">
-//               © 2023 Alisha khan
+//               © 2023 Alisha Iqubal
 //               <a href="#home" style={{ marginLeft: "10px" }}>
 //                 Coding Stella
 //               </a>

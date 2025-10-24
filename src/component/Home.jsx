@@ -6,7 +6,7 @@ export const Home = () => {
   //https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view
   function openHandler() {
     window.open(
-      "https://drive.google.com/file/d/1SuS5dVJvEqOdHOIxZRNlk7FeFW9x3E3o/view?usp=sharing",
+      "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
       "_blank"
     );
   }
@@ -37,7 +37,7 @@ export const Home = () => {
           </Reveal>
           <div className="second-div">
             <span>Web Developer</span>
-            <h1 id="user-detail-name">Alisha khan</h1>
+            <h1 id="user-detail-name">Alisha Iqubal</h1>
             <p id="user-detail-intro">
               Enthusiastic Full Stack Web Developer adeptly wielding a
               comprehensive mastery of both Frontend and Backend technologies
@@ -56,20 +56,16 @@ export const Home = () => {
                   Stay Connected
                 </a>
               </button>
-              <button
-                id="resume-button-2"
-                className="btn"
-                onClick={openHandler}
-              >
-                <a
+              <a className="btn1" onClick={openHandler}>
+                {/* <a
                   className="nav-link resume"
                   href="/Alisha-Khan-Resume..pdf"
                   id="resume-link-2"
                   download="Alisha-Khan-Resume.pdf"
-                >
-                  Resume
-                </a>
-              </button>
+                > */}
+                Resume
+                {/* </a> */}
+              </a>
             </div>
           </div>
         </div>
@@ -80,14 +76,14 @@ export const Home = () => {
 
 const SECTION = styled.section`
   gap: 2rem;
-
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: var(--background);
   .home-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 38px;
     /* padding-inline: 20rem 5rem; */
     padding-inline: 15rem 5rem;
     gap: 8rem;
@@ -111,6 +107,16 @@ const SECTION = styled.section`
       border: 1px solid var(--primary);
       padding: 0.5em 1.25em;
       border-radius: 50px;
+      border: none;
+    }
+    .btn1 {
+      color: var(--background);
+      background-color: var(--primary);
+      border: 1px solid var(--primary);
+      padding: 0.5em 1.25em;
+      border-radius: 50px;
+      text-align: center;
+      justify-content: center;
       border: none;
     }
   }
@@ -143,6 +149,7 @@ const SECTION = styled.section`
   /*large Screen*/
 
   @media screen and (max-width: 1024px) {
+    min-height: 60vh;
     .home-content {
       display: flex;
       justify-content: center;
@@ -171,6 +178,14 @@ const SECTION = styled.section`
         border-radius: 50px;
         border: none;
       }
+      .btn1 {
+        color: var(--background);
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        padding: 0.5em 1.25em;
+        border-radius: 50px;
+        border: none;
+      }
     }
     h1 {
       padding-top: 1rem;
@@ -194,7 +209,7 @@ const SECTION = styled.section`
   /*medium Scren */
   @media screen and (max-width: 768px) {
     .home-content {
-      padding-inline: 5rem 2rem;
+      padding-inline: 5rem;
       gap: 2rem;
     }
 

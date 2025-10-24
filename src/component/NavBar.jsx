@@ -127,7 +127,7 @@ export const NavBar = () => {
     window.open(
       // "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
       // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
-      "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
+      "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
       "_blank"
     );
   }
@@ -136,7 +136,7 @@ export const NavBar = () => {
     <NAVBAR id="nav-menu">
       {isSmallScreen && (
         <div className="mobile-nav">
-          <h2>Alisha Khan</h2>
+          {/* <h2>Alisha Khan</h2> */}
           {/* <img src="myNamelogo.png" alt="" /> */}
           <HamburgerIcon onClick={toggleMenu}>
             <FontAwesomeIcon icon={faBars} className="icon" />
@@ -148,7 +148,7 @@ export const NavBar = () => {
           <div className="close-btn" onClick={toggleMenu}>
             <FontAwesomeIcon icon={faXmark} className="icon" />
           </div>
-          <h2>Alisha Khan</h2>
+          {/* <h2>Alisha Khan</h2> */}
           {/* <img src="myNamelogo.png" alt="" /> */}
           <div>
             <a className="nav-link home" href="#home" onClick={toggleMenu}>
@@ -183,7 +183,7 @@ export const NavBar = () => {
               Contact
             </a>
           </div>
-          <button id="resume-button-1" className="btn" onClick={openHandler}>
+          {/* <button id="resume-button-1" className="btn" onClick={openHandler}>
             <a
               className="nav-link resume"
               href="/Alisha-khan-Resume..pdf"
@@ -193,7 +193,16 @@ export const NavBar = () => {
             >
               Resume
             </a>
-          </button>
+          </button> */}
+          <a
+            id="resume-button-1"
+            className="btn"
+            href="/Alisha-khan-Resume..pdf"
+            download="Alisha-Khan-Resume..pdf"
+            onClick={openHandler}
+          >
+            Resume
+          </a>
         </SIDEBAR>
       ) : (
         <Navigation />
@@ -207,46 +216,66 @@ function Navigation() {
     window.open(
       // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
       // "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing"
-      "https://drive.google.com/file/d/1SuS5dVJvEqOdHOIxZRNlk7FeFW9x3E3o/view?usp=sharing",
+
+      "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
       "_blank"
     );
   }
   return (
-    <>
-      <h2>Alisha Khan</h2>
-      {/* <img src="myNamelogo.png" alt="" /> */}
-      <div>
-        <a className="nav-link home" href="#home">
-          Home
-        </a>
-        <a className="nav-link about" href="#about">
-          About
-        </a>
-        <a className="nav-link skills" href="#skills">
-          Skill
-        </a>
-        <a className="nav-link projects" href="#projects">
-          Project
-        </a>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
 
-        <a className="nav-link statistics" href="#statistics">
-          Statistics
-        </a>
-        <a className="nav-link contact" href="#contact">
-          Contact
-        </a>
+        height: "7vh",
+      }}
+    >
+      <div
+        style={{
+          width: "85%",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {/* <h2>Alisha Khan</h2> */}
+        {/* <img src="myNamelogo.png" alt="" /> */}
+        <div>
+          <a className="nav-link home" href="#home">
+            Home
+          </a>
+          <a className="nav-link about" href="#about">
+            About
+          </a>
+          <a className="nav-link skills" href="#skills">
+            Skill
+          </a>
+          <a className="nav-link projects" href="#projects">
+            Project
+          </a>
+
+          <a className="nav-link statistics" href="#statistics">
+            Statistics
+          </a>
+          <a className="nav-link contact" href="#contact">
+            Contact
+          </a>
+        </div>
       </div>
-      <button id="resume-button-1" className="btn" onClick={openHandler}>
-        <a
+
+      <a id="resume-button-1" className="btn" onClick={openHandler}>
+        {/* <a
           className="nav-link resume"
           href="/Alisha-khan-Resume..pdf"
           id="resume-link-1"
           download="Alisha-Khan-Resume..pdf"
-        >
-          Resume
-        </a>
-      </button>
-    </>
+        > */}
+        Resume
+        {/* </a> */}
+      </a>
+    </div>
   );
 }
 
@@ -364,10 +393,10 @@ const NAVBAR = styled.nav`
       color: var(--primary);
     }
   }
-  .nav-link {
+  /* .nav-link {
     position: relative;
-  }
-  .nav-link::after {
+  } */
+  /* .nav-link::after {
     content: "";
     width: 100%;
     height: 2px;
@@ -378,21 +407,37 @@ const NAVBAR = styled.nav`
     transform: scaleX(0);
     transform-origin: left;
     transition: all 0.2s ease-in;
-  }
-  .nav-link:hover::after {
+  } */
+  /* .nav-link:hover::after {
     transform: scaleX(1);
     background-color: var(--primary);
-    /* transform-origin:left; */
-  }
+    transform-origin:left;
+  } */
 
-  .btn {
-    /* margin-right: 1rem; */
+  /* .btn {
+    margin-right: 1rem;
     color: var(--primary) !important;
     background-color: transparent;
     border: 1px solid var(--primary);
     padding: 0.5em 1.25em;
     border-radius: 50px;
     border: none;
+  } */
+  .btn {
+    color: var(--background);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 0.4em 1.25em;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: auto;
+    font-size: 1.15rem;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: var(--background);
+    }
   }
 
   @media (max-width: 950px) {

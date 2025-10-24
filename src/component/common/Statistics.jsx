@@ -23,7 +23,7 @@ const Statistics = () => {
       <SECTION id="statistics">
         <Container>
           <div variants={textVariant()} className="main">
-            <h3 className="p1">Calender</h3>
+            <h3 className="p1">Statistics</h3>
             <div className="Calender">
               <Calender />
             </div>

@@ -117,8 +117,8 @@ export const Skill = () => {
 };
 
 const SECTION = styled.section`
-  min-height: 80vh;
-  padding-block: 9rem 7rem;
+  min-height: 50vh;
+  padding-top: 9rem;
   /* border: 2px solid green; */
   .skills-container {
     display: flex;
@@ -189,7 +189,7 @@ const SECTION = styled.section`
   }
   @media screen and (max-width: 950px) {
     min-height: 60vh;
-    padding-block: 3rem;
+    padding-top: 3rem;
     /* border: 2px solid green; */
     .skills-container {
       gap: 1rem;
@@ -215,7 +215,7 @@ const SECTION = styled.section`
   /* Medium Screen */
   @media screen and (max-width: 750px) {
     min-height: 50vh;
-    padding-block: 2rem;
+    padding-top: 2rem;
     .Description-skill {
       /* border: 2px solid blue; */
       width: 100%;
