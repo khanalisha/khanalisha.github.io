@@ -123,11 +123,27 @@ export const NavBar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isSmallScreen]);
   //https://drive.google.com/file/d/1IasIvXXy7F68U4_cKr56kYAYDVK3Qftd/view
+  // function openHandler() {
+  //   window.open(
+  //     // "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
+  //     // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
+  //     "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
+  //     "_blank"
+  //   );
+  // }
   function openHandler() {
+    const url =
+      "https://drive.google.com/uc?export=download&id=1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ";
+    // 1. Download resume locally
+    const link = document.createElement("a");
+    link.href = url; // NOTE: Use direct download link (see below)
+    link.download = "Alisha-Iqubal-Resume.pdf"; // desired filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // 2. Open the PDF in a new tab (non-download preview view)
     window.open(
-      // "https://drive.google.com/file/d/1m_1YxZQpZe4aWzrYQv5asFOvCGpMhAe0/view",
-      // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
-      "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
+      "https://drive.google.com/file/d/1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ/view?usp=sharing",
       "_blank"
     );
   }
@@ -212,12 +228,29 @@ export const NavBar = () => {
 };
 
 function Navigation() {
-  function openHandler() {
-    window.open(
-      // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
-      // "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing"
+  // function openHandler() {
+  //   window.open(
+  //     // "https://drive.google.com/file/d/1GslcbYQ82_81Wqi4DK-Qs_qWiBBaNdGg/view?usp=sharing",
+  //     // "https://drive.google.com/file/d/10CJgnj4mInTH4ZP6C8fyLhlIQTgjiXkN/view?usp=sharing"
 
-      "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
+  //     "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
+  //     "_blank"
+  //   );
+  // }
+
+  function openHandler() {
+    const url =
+      "https://drive.google.com/uc?export=download&id=1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ";
+    // 1. Download resume locally
+    const link = document.createElement("a");
+    link.href = url; // NOTE: Use direct download link (see below)
+    link.download = "Alisha-Iqubal-Resume.pdf"; // desired filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // 2. Open the PDF in a new tab (non-download preview view)
+    window.open(
+      "https://drive.google.com/file/d/1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ/view?usp=sharing",
       "_blank"
     );
   }

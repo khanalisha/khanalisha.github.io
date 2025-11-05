@@ -4,12 +4,29 @@ import { Reveal } from "./common/Reveal";
 
 export const Home = () => {
   //https://drive.google.com/file/d/1hYlTjINlJMD21queRo2r746zklGqlAYR/view
+  // function openHandler() {
+  //   window.open(
+  //     "https://drive.google.com/file/d/1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ/view?usp=sharing",
+  //     "_blank"
+  //   );
+  // }
   function openHandler() {
+    const url =
+      "https://drive.google.com/uc?export=download&id=1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ";
+    // 1. Download resume locally
+    const link = document.createElement("a");
+    link.href = url; // NOTE: Use direct download link (see below)
+    link.download = "Alisha-Iqubal-Resume.pdf"; // desired filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // 2. Open the PDF in a new tab (non-download preview view)
     window.open(
-      "https://drive.google.com/file/d/1Tr8mVVGX1GHcvPLrAGYHzHygqTAgUJwv/view?usp=sharing",
+      "https://drive.google.com/file/d/1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ/view?usp=sharing",
       "_blank"
     );
   }
+
   return (
     <Reveal
       hidden={{
@@ -187,6 +204,7 @@ const SECTION = styled.section`
         border: none;
       }
     }
+
     h1 {
       padding-top: 1rem;
     }

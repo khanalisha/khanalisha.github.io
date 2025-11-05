@@ -193,6 +193,8 @@ const SECTION = styled.section`
     /* border: 2px solid green; */
     .skills-container {
       gap: 1rem;
+      padding-top: 5rem;
+      /* border: 2px solid green; */
     }
     .all-skill {
       /* border: 2px solid red; */
@@ -216,6 +218,7 @@ const SECTION = styled.section`
   @media screen and (max-width: 750px) {
     min-height: 50vh;
     padding-top: 2rem;
+
     .Description-skill {
       /* border: 2px solid blue; */
       width: 100%;

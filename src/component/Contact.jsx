@@ -8,6 +8,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCaretRight, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import ContactForm from "./common/utils/ContactForm";
 
 export const Contact = () => {
   return (
@@ -18,6 +19,7 @@ export const Contact = () => {
             Contact <span>Me</span>
           </h1>
           <p className="p-1">Lest's Work Together</p>
+          <ContactForm />
           <div className="contact-A">
             <p>
               <span>
@@ -65,7 +67,7 @@ export const Contact = () => {
               {/*  */}
               <div className="linkdin-div social">
                 <a
-                  href="https://www.linkedin.com/in/alisha-khan-9a561a257"
+                  href="https://www.linkedin.com/in/alisha-Iqubal-9a561a257"
                   id="contact-linkedin"
                   target="_blank"
                 >
@@ -151,9 +153,13 @@ const SECTION = styled.div`
     width: 25px;
     height: 25px;
   }
+
   @media screen and (max-width: 642px) {
+    .contact {
+      border: 2px solid green;
+    }
     .contact-body {
-      padding-top: 12%;
+      padding-top: 19%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -215,12 +221,13 @@ const SECTION = styled.div`
 
   @media screen and (max-width: 320px) {
     .contact-body {
-      padding-top: 12%;
+      /* padding-top: 19%; */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
+
     .p-1 {
       margin-right: 2rem;
       padding-bottom: 1rem;
@@ -274,4 +281,15 @@ const SECTION = styled.div`
       height: 15px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .contact-body {
+      padding-top: 17%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  /*  */
 `;
