@@ -133,7 +133,7 @@ export const NavBar = () => {
   // }
   function openHandler() {
     const url =
-      "https://drive.google.com/uc?export=download&id=1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ";
+      "https://drive.google.com/uc?export=download&id=1isqONLLhoFC260fTay0uhlvh8FtAPb9E";
     // 1. Download resume locally
     const link = document.createElement("a");
     link.href = url; // NOTE: Use direct download link (see below)
@@ -143,7 +143,7 @@ export const NavBar = () => {
     document.body.removeChild(link);
     // 2. Open the PDF in a new tab (non-download preview view)
     window.open(
-      "https://drive.google.com/file/d/1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ/view?usp=sharing",
+      "https://drive.google.com/file/d/1isqONLLhoFC260fTay0uhlvh8FtAPb9E/view?usp=sharing",
       "_blank"
     );
   }
@@ -240,7 +240,7 @@ function Navigation() {
 
   function openHandler() {
     const url =
-      "https://drive.google.com/uc?export=download&id=1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ";
+      "https://drive.google.com/uc?export=download&id=1isqONLLhoFC260fTay0uhlvh8FtAPb9E";
     // 1. Download resume locally
     const link = document.createElement("a");
     link.href = url; // NOTE: Use direct download link (see below)
@@ -250,7 +250,7 @@ function Navigation() {
     document.body.removeChild(link);
     // 2. Open the PDF in a new tab (non-download preview view)
     window.open(
-      "https://drive.google.com/file/d/1-WnI2MxXGKn80wA1f6RGYAHxH3WsWVjZ/view?usp=sharing",
+      "https://drive.google.com/file/d/1isqONLLhoFC260fTay0uhlvh8FtAPb9E/view?usp=sharing",
       "_blank"
     );
   }
